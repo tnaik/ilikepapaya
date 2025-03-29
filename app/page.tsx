@@ -34,10 +34,10 @@ export default function Home() {
             Projects
           </Link>
           <ul className="pl-4 space-y-1 text-sm text-[#7f7f7f]">
-            <Link href="#titan-radio" className="block"><li>• Titan Radio <sup>WIP</sup></li></Link>
-            <Link href="#titan-universe" className="block"><li>• Titan Universe</li></Link>
-            <Link href="#acm" className="block"><li>• ACM <sup>Associated Works</sup></li></Link>
-            <Link href="#memory-box" className="block"><li>• MemoryBox</li></Link>
+            <Link href="#titan-radio" className="block hover:text-black"><li>• Titan Radio <sup>WIP</sup></li></Link>
+            <Link href="#titan-universe" className="block hover:text-black"><li>• Titan Universe</li></Link>
+            <Link href="#acm" className="block hover:text-black"><li>• ACM <sup>Associated Works</sup></li></Link>
+            <Link href="#memory-box" className="block hover:text-black"><li>• MemoryBox</li></Link>
           </ul>
         </nav>
       </div>
