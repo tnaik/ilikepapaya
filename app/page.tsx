@@ -84,21 +84,21 @@ export default function Home() {
 
               <div className="grid grid-cols-3 md:grid-cols-4 gap-2 mt-6">
                 <Image
-                  src="/assets/peopleonpismo.jpg?height=200&width=200"
+                  src="/assets/peopleonpismo.jpeg?height=200&width=200"
                   width={200}
                   height={200}
                   alt="Gallery image"
                   className="rounded-sm object-cover w-full h-full"
                 />
                 <Image
-                  src="/assets/centralpark.jpg?height=200&width=200"
+                  src="/assets/centralpark.jpeg?height=200&width=200"
                   width={200}
                   height={200}
                   alt="Gallery image"
                   className="rounded-sm object-cover w-full h-full"
                 />
                 <Image
-                  src="/assets/band.jpg?height=200&width=200"
+                  src="/assets/band.jpeg?height=200&width=200"
                   width={200}
                   height={200}
                   alt="Gallery image"
