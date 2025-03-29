@@ -270,21 +270,21 @@ export default function Home() {
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
-                alt="Bisou project"
+                alt="MemoryBox project"
                 className="rounded-md"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
-                alt="Bisou project"
+                alt="MemoryBox project"
                 className="rounded-md"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
-                alt="Titan Radio project"
+                alt="MemoryBox project"
                 className="rounded-md"
               />
             </div>
