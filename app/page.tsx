@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="flex flex-col md:flex-row min-h-screen Instrument-Serif">
       {/* Sidebar Navigation */}
-      <div className="w-full md:w-80 bg-[#FAFAFA] p-8 border-r border-[#d9d9d9 to-40%] md:sticky md:top-0 md:h-screen">
+      <div className="w-full md:w-80 bg-[#FAFAFA] p-8 border-r border-[#d9d9d9 to-40%] md:sticky md:top-0 md:h-screen relative">
         <div className="mb-8">
           <div className="flex flex-row gap-2">
           <h1 className="text-2xl font-medium text-[#464646]">Hello! I'm Tanisha</h1>
@@ -43,7 +43,7 @@ export default function Home() {
       </div>
 
       {/* Main Content */}
-      <div className="flex-1 bg-[#fafafa] overflow-y-auto">
+      <div className="flex-1 bg-[#fafafa] overflow-y-auto ">
         {/* About Section */}
         <section id="about" className="p-8 bg-[#ffffff]">
           <div className="flex flex-col items-left gap-8">
@@ -82,7 +82,7 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-3 md:grid-cols-4 gap-2 mt-6">
+              <div className="grid grid-cols-4 md:grid-cols-4 gap-2 mt-6">
                 <Image
                   src="/assets/peopleonpismo.jpeg?height=200&width=200"
                   width={200}
