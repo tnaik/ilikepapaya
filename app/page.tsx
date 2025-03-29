@@ -131,7 +131,7 @@ export default function Home() {
 
         {/* Projects Section */}
         <section id="projects" className="bg-[#ffffff]">
-        <h2 className="text-3xl font-medium text-[#464646] pl-8 pr-8">Projects</h2>
+        <h2 className="text-3xl font-medium text-[#464646] pt-8 pl-8 pr-8">Projects</h2>
 
           {/* Titan Radio Project */}
           <section id="titan-radio" className="p-8 bg-[#ffffff]">
@@ -147,9 +147,8 @@ export default function Home() {
               /></a>
             </div>
             <p className="text-sm text-[#7f7f7f] mb-4">
-              College radio website for Cal State University, Fullerton. Built using Wordpress, HTML, CSS, & JS.
-              <br />
-              Media rich platform for campus shows, local artists, United Media & Creative Coding.
+            College radio website for Cal State University, Fullerton. Built using Wordpress, HTML, CSS, & JS.
+            <br></br>Along with graphics for concerts/shows, using Mixed Media & Creative Coding.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <Badge className="bg-[#5db3f1] text-[#2a6da3] hover:bg-[#5db3f1]/80">Wordpress</Badge>
@@ -187,12 +186,17 @@ export default function Home() {
           <div className="mb-12">
             <div className="flex items-center gap-2 mb-2">
               <h3 className="text-2xl text-[#464646]">TITAN UNIVERSE</h3>
-              <span className="text-sm">🌐</span>
+              <a href="https://titanuniverse.org" target="_blank" rel="noopener noreferrer"><Image
+                src="/assets/new_window.svg"
+                width={20}
+                height={20}
+                alt="New window"
+                className="rounded-sm object-cover"
+              /></a>
             </div>
             <p className="text-sm text-[#7f7f7f] mb-4">
-              College blog website for Cal State University, Fullerton. Built using Wordpress, HTML, CSS, & JS.
-              <br />
-              Media rich media graphics for Instagram, built using Canva & Figma.
+            College blog website for Cal State University, Fullerton. Built using Wordpress, HTML, CSS, & JS.
+            <br></br>Along social media graphics for Instagram, built using Canva & Figma.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <Badge className="bg-[#5db3f1] text-[#2a6da3] hover:bg-[#5db3f1]/80">Wordpress</Badge>
