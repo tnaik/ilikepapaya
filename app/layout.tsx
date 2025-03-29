@@ -11,8 +11,8 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: 'v0 App',
-  description: 'Created with v0',
+  title: 'ilikepapaya',
+  description: 'tanisha site',
   generator: 'v0.dev',
 }
 
