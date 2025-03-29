@@ -34,9 +34,9 @@ export default function Home() {
             Projects
           </Link>
           <ul className="pl-4 space-y-1 text-sm text-[#7f7f7f]">
-            <Link href="#titan-radio" className="block hover:text-black"><li>• Titan Radio <sup>WIP</sup></li></Link>
+            <Link href="#titan-radio" className="block hover:text-black"><li>• Titan Radio <sup>(WIP)</sup></li></Link>
             <Link href="#titan-universe" className="block hover:text-black"><li>• Titan Universe</li></Link>
-            <Link href="#acm" className="block hover:text-black"><li>• ACM <sup>Associated Works</sup></li></Link>
+            <Link href="#acm" className="block hover:text-black"><li>• ACM <sup>(Associated Works)</sup></li></Link>
             <Link href="#memory-box" className="block hover:text-black"><li>• MemoryBox</li></Link>
           </ul>
         </nav>
@@ -121,7 +121,7 @@ export default function Home() {
           <h2 className="text-3xl font-medium mb-6 text-[#464646]">Work</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-[#7f7f7f]">Digital tinkerer @ <a href="https://www.titanradio.org"><u>Titan Radio</u></a>, reshaping college radio for the web</p>
+              <p className="text-[#7f7f7f]">Digital tinkerer @ <a href="https://titanradio.org" target="_blank" rel="noopener noreferrer"><u>Titan Radio</u></a>, reshaping college radio for the web</p>
             </div>
             <div>
               <p className="text-[#7f7f7f]">Experience designer building intuitive solutions @ <u>AIFA Labs</u></p>
@@ -138,7 +138,13 @@ export default function Home() {
           <div className="mb-12">
             <div className="flex items-center gap-2 mb-2">
               <h3 className="text-2xl text-[#464646]">TITAN RADIO</h3>
-              <span className="text-sm">🌐</span>
+              <a href="https://titanradio.org" target="_blank" rel="noopener noreferrer"><Image
+                src="/assets/new_window.svg"
+                width={20}
+                height={20}
+                alt="New window"
+                className="rounded-sm object-cover"
+              /></a>
             </div>
             <p className="text-sm text-[#7f7f7f] mb-4">
               College radio website for Cal State University, Fullerton. Built using Wordpress, HTML, CSS, & JS.
