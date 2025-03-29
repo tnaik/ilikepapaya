@@ -6,9 +6,18 @@ export default function Home() {
   return (
     <div className="flex flex-col md:flex-row min-h-screen Instrument-Serif">
       {/* Sidebar Navigation */}
-      <div className="w-full md:w-64 bg-[#ffffff] p-6 border-r border-[#d9d9d9 to-40%] md:sticky md:top-0 md:h-screen">
+      <div className="w-full md:w-80 bg-[#ffffff] p-8 border-r border-[#d9d9d9 to-40%] md:sticky md:top-0 md:h-screen">
         <div className="mb-8">
-          <h1 className="text-2xl font-medium text-[#464646]">Hello! I'm Tanisha ✨</h1>
+          <div className="flex flex-row gap-2">
+          <h1 className="text-2xl font-medium text-[#464646]">Hello! I'm Tanisha</h1>
+          <Image
+                src="/assets/peace.svg"
+                width={30}
+                height={30}
+                alt="Profile"
+                className="rounded-sm object-cover"
+              />
+          </div>
           <p className="text-sm text-[#7f7f7f] mt-2">
             An aspiring creative technologist, imagining & crafting for digital experiences.
           </p>
@@ -40,11 +49,11 @@ export default function Home() {
           <div className="flex flex-col items-left gap-8">
             <div className="w-40 h-auto mb-4">
               <Image
-                src="/placeholder.svg?height=200&width=150"
-                width={150}
+                src="/assets/tanisha.jpeg?height=200&width=200"
+                width={200}
                 height={200}
                 alt="Profile"
-                className="rounded-md"
+                className="rounded-sm object-cover w-full h-full"
               />
             </div>
             <div className="w:full">
@@ -75,32 +84,32 @@ export default function Home() {
 
               <div className="grid grid-cols-3 md:grid-cols-4 gap-2 mt-6">
                 <Image
-                  src="/placeholder.svg?height=100&width=100"
+                  src="/assets/peopleonpismo.jpg?height=200&width=200"
                   width={200}
                   height={200}
                   alt="Gallery image"
-                  className="rounded-md"
+                  className="rounded-sm object-cover w-full h-full"
                 />
                 <Image
-                  src="/placeholder.svg?height=100&width=100"
+                  src="/assets/centralpark.jpg?height=200&width=200"
                   width={200}
                   height={200}
                   alt="Gallery image"
-                  className="rounded-md"
+                  className="rounded-sm object-cover w-full h-full"
                 />
                 <Image
-                  src="/placeholder.svg?height=100&width=100"
+                  src="/assets/band.jpg?height=200&width=200"
                   width={200}
                   height={200}
                   alt="Gallery image"
-                  className="rounded-md"
+                  className="rounded-sm object-cover w-full h-full"
                 />
                 <Image
-                  src="/placeholder.svg?height=100&width=100"
+                  src="/assets/pismo.jpeg?height=200&width=200"
                   width={200}
                   height={200}
                   alt="Gallery image"
-                  className="rounded-md"
+                  className="rounded-sm object-cover w-full h-full"
                 />
               </div>
             </div>
