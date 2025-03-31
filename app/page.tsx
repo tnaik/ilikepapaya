@@ -214,7 +214,14 @@ export default function Home() {
               <Badge className="bg-[#f256dc] text-[#a02a8f] hover:bg-[#f256dc]/80">UX Design</Badge>
               <Badge className="bg-[#a5b941] text-[#5a6824] hover:bg-[#a5b941]/80">Web Development</Badge>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+            <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+              <Image
+                src="/placeholder.svg?height=200&width=300"
+                width={300}
+                height={200}
+                alt="Titan Radio project"
+                className="rounded-md"
+              />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
@@ -264,7 +271,14 @@ export default function Home() {
               <Badge className="bg-[#a5b941] text-[#5a6824] hover:bg-[#a5b941]/80">Web Development</Badge>
               <Badge className="bg-[#FFDE7C] text-[#DA7D51] hover:bg-[#ffde7c]/80">Social Media</Badge>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+            <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+              <Image
+                src="/placeholder.svg?height=200&width=300"
+                width={300}
+                height={200}
+                alt="Titan Universe project"
+                className="rounded-md"
+              />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
@@ -305,7 +319,7 @@ export default function Home() {
               <Badge className="bg-[#e5f2a5] text-[#a5b941] hover:bg-[#e5f2a5]/80">Graphic Design</Badge>
               <Badge className="bg-[#a5b941] text-[#5a6824] hover:bg-[#a5b941]/80">Web Development</Badge>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+            <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
@@ -324,7 +338,14 @@ export default function Home() {
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
-                alt="Titan Radio project"
+                alt="ACM project"
+                className="rounded-md"
+              />
+              <Image
+                src="/placeholder.svg?height=200&width=300"
+                width={300}
+                height={200}
+                alt="ACM project"
                 className="rounded-md"
               />
             </div>
@@ -339,10 +360,17 @@ export default function Home() {
               Web project designed using Figma for Code&Crush Designathon (presented by CSUF Society of Women Engineers), placing 3rd. 
               <br />Reimagining means of preserving love, virtually. 
             </p>
-            <div className="flex flex-wrap gap-2 mb-4">
+            <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Badge className="bg-[#f256dc] text-[#a02a8f] hover:bg-[#f256dc]/80">UX Design</Badge>
             </div>
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-2">
+            <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+              <Image
+                src="/placeholder.svg?height=200&width=300"
+                width={300}
+                height={200}
+                alt="MemoryBox project"
+                className="rounded-md"
+              />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
