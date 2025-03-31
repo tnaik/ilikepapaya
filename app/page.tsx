@@ -60,7 +60,7 @@ export default function Home() {
 
             <li>
               <Link href="#memory-box" className="block hover:text-black">
-                • MemoryBox
+                • Hello
               </Link>
             </li>
           </ul>
