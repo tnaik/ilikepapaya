@@ -1,6 +1,7 @@
 import Image from "next/image"
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
+import { BackToTop } from "@/components/bring-to-top"
 import { Button } from "react-day-picker"
 import { transform } from "next/dist/build/swc/generated-native"
 
@@ -180,10 +181,10 @@ export default function Home() {
           <h2 className="text-3xl font-medium mb-6 text-[#464646]">Work</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-[#7f7f7f]">Digital tinkerer @ <a href="https://titanradio.org" target="_blank" rel="noopener noreferrer"><u>Titan Radio</u></a>, reshaping college radio for the web</p>
+              <p className="text-[#7f7f7f]">Digital tinkerer @ <a href="https://titanradio.org" target="_blank" rel="noopener noreferrer"><u>Titan Radio</u></a>, reshaping college radio for the web.</p>
             </div>
             <div>
-              <p className="text-[#7f7f7f]">Experience designer building intuitive solutions @ <u>AIFA Labs</u></p>
+              <p className="text-[#7f7f7f]">Experience designer building intuitive solutions @ <u>AIFA Labs</u>.</p>
             </div>
           </div>
         </section>
@@ -403,6 +404,7 @@ export default function Home() {
           </div>
           </section>
         </section>
+        <BackToTop />
       </div>
     </div>
   )
