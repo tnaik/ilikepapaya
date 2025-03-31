@@ -38,11 +38,31 @@ export default function Home() {
           <Link href="#projects" className="block text-[#464646] hover:text-black">
             Projects
           </Link>
+
           <ul className="pl-2 space-y-1 text-sm text-[#7f7f7f]">
-            <Link href="#titan-radio" className="block hover:text-black"><li>• Titan Radio <sup>(WIP)</sup></li></Link>
-            <Link href="#titan-universe" className="block hover:text-black"><li>• Titan Universe</li></Link>
-            <Link href="#acm" className="block hover:text-black"><li>• ACM <sup>(Associated Works)</sup></li></Link>
-            <Link href="#memory-box" className="block hover:text-black"><li>• MemoryBox</li></Link>
+            <li>
+              <Link href="#titan-radio" className="block hover:text-black">
+                • Titan Radio <sup>(WIP)</sup>
+              </Link>
+            </li>
+
+            <li>
+              <Link href="#titan-universe" className="block hover:text-black">
+                • Titan Universe
+              </Link>
+            </li>
+
+            <li>
+              <Link href="#acm" className="block hover:text-black">
+                • ACM <sup>(Associated Works)</sup>
+              </Link>
+            </li>
+
+            <li>
+              <Link href="#memory-box" className="block hover:text-black">
+                • MemoryBox
+              </Link>
+            </li>
           </ul>
         </nav>
 
