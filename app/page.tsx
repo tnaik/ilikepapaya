@@ -112,7 +112,7 @@ export default function Home() {
                 width={200}
                 height={200}
                 alt="Profile"
-                className="rounded-sm object-cover w-full h-full"
+                className="object-cover w-full h-full"
               />
             </div>
             <div className="w:full">
@@ -141,34 +141,34 @@ export default function Home() {
                 </p>
               </div>
 
-              <div className="grid grid-cols-4 md:grid-cols-4 gap-2 mt-6">
+              <div className="grid grid-cols-4 md:grid-cols-4 gap-1 mt-6">
                 <Image
                   src="/assets/peopleonpismo.jpeg?height=200&width=200"
                   width={200}
                   height={200}
                   alt="People on Pismo Beach"
-                  className="rounded-sm object-cover w-full h-full"
+                  className="object-cover w-full h-full"
                 />
                 <Image
                   src="/assets/centralpark.jpeg?height=200&width=200"
                   width={200}
                   height={200}
                   alt="Central Park, New York City"
-                  className="rounded-sm object-cover w-full h-full"
+                  className="object-cover w-full h-full"
                 />
                 <Image
                   src="/assets/band.jpeg?height=200&width=200"
                   width={200}
                   height={200}
                   alt="Band & Crowd for Girls Just Wanna Have Punk show"
-                  className="rounded-sm object-cover w-full h-full"
+                  className="object-cover w-full h-full"
                 />
                 <Image
                   src="/assets/pismo.jpeg?height=200&width=200"
                   width={200}
                   height={200}
                   alt="Pismo Beach during Sunset"
-                  className="rounded-sm object-cover w-full h-full"
+                  className="object-cover w-full h-full"
                 />
               </div>
             </div>
@@ -194,7 +194,7 @@ export default function Home() {
 
           {/* Titan Radio Project */}
           <section id="titan-radio" className="p-8 bg-[#ffffff]">
-          <div className="mb-12">
+          <div className="mb-8">
             <div className="flex items-center gap-2 mb-2">
               <h3 className="text-2xl text-[#464646]">TITAN RADIO</h3>
               <a href="https://titanradio.org" target="_blank" rel="noopener noreferrer" aria-label="Titan Radio website"><Image
@@ -214,34 +214,34 @@ export default function Home() {
               <Badge className="bg-[#f256dc] text-[#a02a8f] hover:bg-[#f256dc]/80">UX Design</Badge>
               <Badge className="bg-[#a5b941] text-[#5a6824] hover:bg-[#a5b941]/80">Web Development</Badge>
             </div>
-            <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+            <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Radio project"
-                className="rounded-md"
+                className="rounded-none"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Radio project"
-                className="rounded-md"
+                className="rounded-none"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Radio project"
-                className="rounded-md"
+                className="rounded-none"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Radio project"
-                className="rounded-md"
+                className="rounded-none"
               />
             </div>
           </div>
@@ -249,7 +249,7 @@ export default function Home() {
 
           {/* Titan Universe Project */}
           <section id="titan-universe" className="p-8 bg-[#ffffff]">
-          <div className="mb-12">
+          <div className="mb-8">
             <div className="flex items-center gap-2 mb-2">
               <h3 className="text-2xl text-[#464646]">TITAN UNIVERSE</h3>
               <a href="https://titanuniverse.org" target="_blank" rel="noopener noreferrer" aria-label="Titan Universe website"><Image
@@ -271,34 +271,34 @@ export default function Home() {
               <Badge className="bg-[#a5b941] text-[#5a6824] hover:bg-[#a5b941]/80">Web Development</Badge>
               <Badge className="bg-[#FFDE7C] text-[#DA7D51] hover:bg-[#ffde7c]/80">Social Media</Badge>
             </div>
-            <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+            <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Universe project"
-                className="rounded-md"
+                className="rounded-none"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Universe project"
-                className="rounded-md"
+                className="rounded-none"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Universe project"
-                className="rounded-md"
+                className="rounded-none"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Universe project"
-                className="rounded-md"
+                className="rounded-none"
               />
             </div>
           </div>
@@ -306,7 +306,7 @@ export default function Home() {
 
           {/* ACM Project */}
           <section id="acm" className="p-8 bg-[#ffffff]">
-          <div className="mb-12">
+          <div className="mb-8">
             <div className="flex items-center gap-2 mb-2">
               <h3 className="text-2xl text-[#464646]">ACM — Associated Works</h3>
             </div>
@@ -319,34 +319,34 @@ export default function Home() {
               <Badge className="bg-[#e5f2a5] text-[#a5b941] hover:bg-[#e5f2a5]/80">Graphic Design</Badge>
               <Badge className="bg-[#a5b941] text-[#5a6824] hover:bg-[#a5b941]/80">Web Development</Badge>
             </div>
-            <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+            <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="ACM project"
-                className="rounded-md"
+                className="rounded-none"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="ACM project"
-                className="rounded-md"
+                className="rounded-none"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="ACM project"
-                className="rounded-md"
+                className="rounded-none"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="ACM project"
-                className="rounded-md"
+                className="rounded-none"
               />
             </div>
           </div>
@@ -363,34 +363,34 @@ export default function Home() {
             <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Badge className="bg-[#f256dc] text-[#a02a8f] hover:bg-[#f256dc]/80">UX Design</Badge>
             </div>
-            <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+            <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="MemoryBox project"
-                className="rounded-md"
+                className="rounded-none"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="MemoryBox project"
-                className="rounded-md"
+                className="rounded-none"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="MemoryBox project"
-                className="rounded-md"
+                className="rounded-none"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="MemoryBox project"
-                className="rounded-md"
+                className="rounded-none"
               />
             </div>
           </div>
