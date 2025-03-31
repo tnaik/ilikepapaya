@@ -297,9 +297,8 @@ export default function Home() {
               <h3 className="text-2xl text-[#464646]">ACM — Associated Works</h3>
             </div>
             <p className="text-sm text-[#7f7f7f] mb-4">
-              Designs for the Computer Science & Engineering chapters at Cal State University, Fullerton. Designed
-              <br />
-              apps, flyers, websites, & graphics. Hosted several workshops related to Design & Technology.
+              Designs for the Computer Science & Engineering chapters at Cal State University, Fullerton. <br />
+              Designed apps, flyers, websites, & graphics. Hosted several workshops related to Design & Technology.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <Badge className="bg-[#f256dc] text-[#a02a8f] hover:bg-[#f256dc]/80">UX Design</Badge>
