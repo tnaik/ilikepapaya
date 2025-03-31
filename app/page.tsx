@@ -197,7 +197,7 @@ export default function Home() {
           <div className="mb-12">
             <div className="flex items-center gap-2 mb-2">
               <h3 className="text-2xl text-[#464646]">TITAN RADIO</h3>
-              <a href="https://titanradio.org" target="_blank" rel="noopener noreferrer" aria-label="Link to Titan Radio"><Image
+              <a href="https://titanradio.org" target="_blank" rel="noopener noreferrer" aria-label="Titan Radio website"><Image
                 src="/assets/new_window.svg"
                 width={20}
                 height={20}
@@ -245,7 +245,7 @@ export default function Home() {
           <div className="mb-12">
             <div className="flex items-center gap-2 mb-2">
               <h3 className="text-2xl text-[#464646]">TITAN UNIVERSE</h3>
-              <a href="https://titanuniverse.org" target="_blank" rel="noopener noreferrer" aria-label="Link to Titan Universe"><Image
+              <a href="https://titanuniverse.org" target="_blank" rel="noopener noreferrer" aria-label="Titan Universe website"><Image
                 src="/assets/new_window.svg"
                 width={20}
                 height={20}
