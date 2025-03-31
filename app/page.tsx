@@ -41,13 +41,13 @@ export default function Home() {
 
           <ul className="pl-2 space-y-1 text-sm text-[#7f7f7f]">
             <li>
-              <Link href="#titan-radio" className="block hover:text-black" aria-label="Link to Titan Radio section">
+              <Link href="#titan-radio" className="block hover:text-black" aria-label="Titan Radio">
                 • Titan Radio <sup>(WIP)</sup>
               </Link>
             </li>
 
             <li>
-              <Link href="#titan-universe" className="block hover:text-black" aria-label="Link to Titan Universe section">
+              <Link href="#titan-universe" className="block hover:text-black" aria-label="Titan Universe">
                 • Titan Universe
               </Link>
             </li>
