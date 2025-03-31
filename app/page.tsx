@@ -48,7 +48,7 @@ export default function Home() {
 
         {/* Contact */}
 
-        <p className="text-m mt-8 text-[#464646]">Contact</p>
+        <p className="text-m mt-8 text-[#464646]">Hello</p>
 
         <div className="mt-2 flex flex-row gap-2">
 
