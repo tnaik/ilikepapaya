@@ -41,7 +41,7 @@ export default function Home() {
 
           <ul className="pl-2 space-y-1 text-sm text-[#7f7f7f]">
             <li>
-              <Link href="#titan-radio" className="block hover:text-black" aria-label="Titan Radio">
+              <Link href="#titan-radio" className="block hover:text-black" aria-label="Titan Radio (WIP)">
                 • Titan Radio <sup>(WIP)</sup>
               </Link>
             </li>
@@ -53,7 +53,7 @@ export default function Home() {
             </li>
 
             <li>
-              <Link href="#acm" className="block hover:text-black" aria-label="Link to ACM section">
+              <Link href="#acm" className="block hover:text-black" aria-label="ACM (Associated Works)">
                 • ACM <sup>(Associated Works)</sup>
               </Link>
             </li>
