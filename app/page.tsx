@@ -4,6 +4,8 @@ import { Badge } from "@/components/ui/badge"
 import { BackToTop } from "@/components/bring-to-top"
 import { Button } from "react-day-picker"
 import { transform } from "next/dist/build/swc/generated-native"
+import { ArrowUp } from "lucide-react"
+import { CircleArrowOutUpRight } from 'lucide-react';
 
 export default function Home() {
   return (
@@ -197,14 +199,16 @@ export default function Home() {
           <section id="titan-radio" className="p-8 bg-[#ffffff]">
           <div className="mb-8">
             <div className="flex items-center gap-2 mb-2">
-              <h3 className="text-2xl text-[#464646]">TITAN RADIO</h3>
-              <a href="https://titanradio.org" target="_blank" rel="noopener noreferrer" aria-label="Titan Radio website"><Image
+            <h3 className="text-2xl text-[#464646]">TITAN RADIO</h3>
+              <a href="https://titanradio.org" target="_blank" rel="noopener noreferrer" aria-label="Titan Universe website">
+              <Image
                 src="/assets/new_window.svg"
                 width={20}
                 height={20}
                 alt="New window"
                 className="rounded-sm object-cover"
-              /></a>
+              />
+              </a>
             </div>
             <p className="text-sm text-[#7f7f7f] mb-4">
             College radio website for Cal State University, Fullerton. Built using Wordpress, HTML, CSS, & JS.
@@ -217,32 +221,32 @@ export default function Home() {
             </div>
             <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
-                src="/placeholder.svg?height=200&width=300"
+                src="/assets/TR/logo.png?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Radio project"
-                className="rounded-none"
+                className="rounded-none object-cover w-full h-full"
               />
               <Image
-                src="/placeholder.svg?height=200&width=300"
+                src="/assets/TR/blogs.png?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Radio project"
-                className="rounded-none"
+                className="rounded-none object-cover w-full h-full"
               />
               <Image
-                src="/placeholder.svg?height=200&width=300"
+                src="/assets/TR/footer.png?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Radio project"
-                className="rounded-none"
+                className="rounded-none object-cover w-full h-full"
               />
               <Image
-                src="/placeholder.svg?height=200&width=300"
+                src="/assets/TR/home.png?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Radio project"
-                className="rounded-none"
+                className="rounded-none object-cover w-full h-full"
               />
             </div>
           </div>
@@ -253,13 +257,15 @@ export default function Home() {
           <div className="mb-8">
             <div className="flex items-center gap-2 mb-2">
               <h3 className="text-2xl text-[#464646]">TITAN UNIVERSE</h3>
-              <a href="https://titanuniverse.org" target="_blank" rel="noopener noreferrer" aria-label="Titan Universe website"><Image
+              <a href="https://titanuniverse.org" target="_blank" rel="noopener noreferrer" aria-label="Titan Universe website">
+              <Image
                 src="/assets/new_window.svg"
                 width={20}
                 height={20}
                 alt="New window"
                 className="rounded-sm object-cover"
-              /></a>
+              />
+              </a>
             </div>
             <p className="text-sm text-[#7f7f7f] mb-4">
             College blog website for Cal State University, Fullerton. Built using Wordpress, HTML, CSS, & JS.
@@ -278,28 +284,28 @@ export default function Home() {
                 width={300}
                 height={200}
                 alt="Titan Universe project"
-                className="rounded-none"
+                className="rounded-none object-cover w-full h-full"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Universe project"
-                className="rounded-none"
+                className="rounded-none object-cover w-full h-full"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Universe project"
-                className="rounded-none"
+                className="rounded-none object-cover w-full h-full"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Universe project"
-                className="rounded-none"
+                className="rounded-none object-cover w-full h-full"
               />
             </div>
           </div>
@@ -310,6 +316,15 @@ export default function Home() {
           <div className="mb-8">
             <div className="flex items-center gap-2 mb-2">
               <h3 className="text-2xl text-[#464646]">ACM — Associated Works</h3>
+              <a href="https://acmcsuf.com" target="_blank" rel="noopener noreferrer" aria-label="Titan Universe website">
+              <Image
+                src="/assets/new_window.svg"
+                width={20}
+                height={20}
+                alt="New window"
+                className="rounded-none object-cover w-full h-full"
+              />
+              </a>
             </div>
             <p className="text-sm text-[#7f7f7f] mb-4">
               Designs for the Computer Science & Engineering chapters at Cal State University, Fullerton. <br />
@@ -326,28 +341,28 @@ export default function Home() {
                 width={300}
                 height={200}
                 alt="ACM project"
-                className="rounded-none"
+                className="rounded-none object-cover w-full h-full"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="ACM project"
-                className="rounded-none"
+                className="rounded-none object-cover w-full h-full"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="ACM project"
-                className="rounded-none"
+                className="rounded-none object-cover w-full h-full"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="ACM project"
-                className="rounded-none"
+                className="rounded-none object-cover w-full h-full"
               />
             </div>
           </div>
@@ -370,28 +385,28 @@ export default function Home() {
                 width={300}
                 height={200}
                 alt="MemoryBox project"
-                className="rounded-none"
+                className="rounded-none object-cover w-full h-full"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="MemoryBox project"
-                className="rounded-none"
+                className="rounded-none object-cover w-full h-full"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="MemoryBox project"
-                className="rounded-none"
+                className="rounded-none object-cover w-full h-full"
               />
               <Image
                 src="/placeholder.svg?height=200&width=300"
                 width={300}
                 height={200}
                 alt="MemoryBox project"
-                className="rounded-none"
+                className="rounded-none object-cover w-full h-full"
               />
             </div>
           </div>
