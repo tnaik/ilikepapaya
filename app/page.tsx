@@ -75,7 +75,7 @@ export default function Home() {
 
         <div className="mt-2 flex flex-row gap-2">
 
-          <Badge className="gap-1 font-medium bg-[#4c956c] text-[#1b4332] hover:bg-[#4c956c]/80"> Resume
+          <Badge className="gap-1 font-medium bg-[#42C97E] text-[#252422] hover:bg-[#42C97E]/80"> Resume
           <a href="https://drive.google.com/file/d/1NuSAJtLfGgDwauEFxVH1Y4_xS0yQ4oGY/view?usp=sharing" target="_blank" rel="noopener noreferrer" aria-label="Link to resume">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4 rotate-45">
             <path fillRule="evenodd" d="M12 2.25c-5.385 0-9.75 4.365-9.75 9.75s4.365 9.75 9.75 9.75 9.75-4.365 9.75-9.75S17.385 2.25 12 2.25Zm.53 5.47a.75.75 0 0 0-1.06 0l-3 3a.75.75 0 1 0 1.06 1.06l1.72-1.72v5.69a.75.75 0 0 0 1.5 0v-5.69l1.72 1.72a.75.75 0 1 0 1.06-1.06l-3-3Z" clipRule="evenodd" />
@@ -83,7 +83,7 @@ export default function Home() {
           </a>
           </Badge>
 
-          <Badge className="gap-1 bg-[#F7DD43] text-[#a59132] hover:bg-[#F7DD43]/80">
+          <Badge className="gap-1 bg-[#F7DD43] text-[#252422] hover:bg-[#F7DD43]/80">
           <a href="mailto:tanishapnaik@gmail.com?subject=Interested%20in%20your%20work...&body=Let's%20Connect!" aria-label="Link to email draft">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-4">
             <path d="M1.5 8.67v8.58a3 3 0 0 0 3 3h15a3 3 0 0 0 3-3V8.67l-8.928 5.493a3 3 0 0 1-3.144 0L1.5 8.67Z" />
@@ -92,7 +92,7 @@ export default function Home() {
           </a>
           </Badge>
 
-          <Badge className="gap-1 bg-[#AF5A9A] text-[#320e3b] hover:bg-[#AF5A9A]/80">
+          <Badge className="gap-1 bg-[#FF82E0] text-[#252422] hover:bg-[#FF82E0]/80">
           <a href="https://www.linkedin.com/in/tanishanaik/" target="_blank" rel="noopener noreferrer" aria-label="Link to LinkedIn">
           <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="100" height="100" viewBox="0,0,256,256" className="size-6">
             <g fill="#320e3b" fillRule="nonzero" stroke="none" strokeWidth="1" strokeLinecap="butt" strokeLinejoin="miter" strokeMiterlimit="10" strokeDasharray="" strokeDashoffset="0" fontFamily="none" fontWeight="none" fontSize="none" textAnchor="none"><g transform="scale(4,4)"><path d="M40.227,12c10.918,0 11.773,0.854 11.773,11.773v16.453c0,10.919 -0.855,11.774 -11.773,11.774h-16.454c-10.918,0 -11.773,-0.855 -11.773,-11.773v-16.454c0,-10.919 0.855,-11.773 11.773,-11.773zM25.029,43v-16.272h-5.057v16.272zM22.501,24.401c1.625,0 2.947,-1.322 2.947,-2.949c0,-1.625 -1.322,-2.947 -2.947,-2.947c-1.629,0 -2.949,1.32 -2.949,2.947c0,1.627 1.318,2.949 2.949,2.949zM44,43v-8.925c0,-4.382 -0.946,-7.752 -6.067,-7.752c-2.46,0 -4.109,1.349 -4.785,2.628h-0.068v-2.223h-4.851v16.272h5.054v-8.05c0,-2.122 0.405,-4.178 3.036,-4.178c2.594,0 2.628,2.427 2.628,4.315v7.913z"></path></g></g>
@@ -215,9 +215,9 @@ export default function Home() {
             <br></br>Along with graphics for concerts/shows, using Mixed Media & Creative Coding.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
-              <Badge className="bg-[#5db3f1] text-[#2a6da3] hover:bg-[#5db3f1]/80">Wordpress</Badge>
-              <Badge className="bg-[#f256dc] text-[#a02a8f] hover:bg-[#f256dc]/80">UX Design</Badge>
-              <Badge className="bg-[#a5b941] text-[#5a6824] hover:bg-[#a5b941]/80">Web Development</Badge>
+              <Badge className="bg-[#5db3f1] text-[#252422] hover:bg-[#5db3f1]/80">Wordpress</Badge>
+              <Badge className="bg-[#f256dc] text-[#252422] hover:bg-[#f256dc]/80">UX Design</Badge>
+              <Badge className="bg-[#a5b941] text-[#252422] hover:bg-[#a5b941]/80">Web Development</Badge>
             </div>
             <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
@@ -272,11 +272,11 @@ export default function Home() {
             <br></br>Along social media graphics for Instagram, built using Canva & Figma.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
-              <Badge className="bg-[#5db3f1] text-[#2a6da3] hover:bg-[#5db3f1]/80">Wordpress</Badge>
-              <Badge className="bg-[#f256dc] text-[#a02a8f] hover:bg-[#f256dc]/80">UX Design</Badge>
-              <Badge className="bg-[#f56a6a] text-[#a03636] hover:bg-[#f56a6a]/80">Digital Marketing</Badge>
-              <Badge className="bg-[#a5b941] text-[#5a6824] hover:bg-[#a5b941]/80">Web Development</Badge>
-              <Badge className="bg-[#FFDE7C] text-[#DA7D51] hover:bg-[#ffde7c]/80">Social Media</Badge>
+              <Badge className="bg-[#5db3f1] text-[#252422] hover:bg-[#5db3f1]/80">Wordpress</Badge>
+              <Badge className="bg-[#f256dc] text-[#252422] hover:bg-[#f256dc]/80">UX Design</Badge>
+              <Badge className="bg-[#f56a6a] text-[#252422] hover:bg-[#f56a6a]/80">Digital Marketing</Badge>
+              <Badge className="bg-[#a5b941] text-[#252422] hover:bg-[#a5b941]/80">Web Development</Badge>
+              <Badge className="bg-[#FFDE7C] text-[#252422] hover:bg-[#ffde7c]/80">Social Media</Badge>
             </div>
             <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
@@ -331,9 +331,9 @@ export default function Home() {
               Designed apps, flyers, websites, & graphics. Hosted several workshops related to Design & Technology.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
-              <Badge className="bg-[#f256dc] text-[#a02a8f] hover:bg-[#f256dc]/80">UX Design</Badge>
-              <Badge className="bg-[#e5f2a5] text-[#a5b941] hover:bg-[#e5f2a5]/80">Graphic Design</Badge>
-              <Badge className="bg-[#a5b941] text-[#5a6824] hover:bg-[#a5b941]/80">Web Development</Badge>
+              <Badge className="bg-[#f256dc] text-[#252422] hover:bg-[#f256dc]/80">UX Design</Badge>
+              <Badge className="bg-[#e5f2a5] text-[#252422] hover:bg-[#e5f2a5]/80">Graphic Design</Badge>
+              <Badge className="bg-[#a5b941] text-[#252422] hover:bg-[#a5b941]/80">Web Development</Badge>
             </div>
             <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
@@ -377,7 +377,7 @@ export default function Home() {
               <br />Reimagining means of preserving love, virtually. 
             </p>
             <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
-              <Badge className="bg-[#f256dc] text-[#a02a8f] hover:bg-[#f256dc]/80">UX Design</Badge>
+              <Badge className="bg-[#f256dc] text-[#252422] hover:bg-[#f256dc]/80">UX Design</Badge>
             </div>
             <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
