@@ -62,6 +62,12 @@ export default function Home() {
             </li>
 
             <li>
+              <Link href="#BlogIt" className="block hover:text-black" aria-label="Link to BlogIt section">
+                • BlogIt!
+              </Link>
+            </li>
+
+            <li>
               <Link href="#memory-box" className="block hover:text-black" aria-label="Link to MemoryBox section">
                 • MemoryBox
               </Link>
@@ -116,6 +122,7 @@ export default function Home() {
                 height={200}
                 alt="Profile"
                 className="object-cover w-full h-full"
+                priority
               />
             </div>
             <div className="w:full">
