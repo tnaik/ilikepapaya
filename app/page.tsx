@@ -219,34 +219,34 @@ export default function Home() {
               <Badge className="bg-[#f256dc] text-[#252422] hover:bg-[#f256dc]/80">UX Design</Badge>
               <Badge className="bg-[#a5b941] text-[#252422] hover:bg-[#a5b941]/80">Web Development</Badge>
             </div>
-            <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+            <div className="flex overflow-x-auto gap-4 pb-8 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
-                src="/assets/TR/logo.png?height=200&width=300"
-                width={400}
-                height={200}
+                src="/assets/TR/logo.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="Titan Radio project"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/TR/hero.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/TR/hero.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="Titan Radio project"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/TR/blogs.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/TR/blogs.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="Titan Radio project"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/TR/footer.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/TR/footer.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="Titan Radio project"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
@@ -278,62 +278,62 @@ export default function Home() {
               <Badge className="bg-[#a5b941] text-[#252422] hover:bg-[#a5b941]/80">Web Development</Badge>
               <Badge className="bg-[#FFDE7C] text-[#252422] hover:bg-[#ffde7c]/80">Social Media</Badge>
             </div>
-            <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+            <div className="flex overflow-x-auto gap-4 pb-8 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
-                src="/assets/TU/flyer.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/TU/gallery.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="Titan Universe project"
-                className="rounded-none object-cover w-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/TU/footer.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/TU/header.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="Titan Universe project"
-                className="rounded-none object-cover w-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/TU/gallery.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/TU/home.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="Titan Universe project"
-                className="rounded-none object-cover w-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/TU/header.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/TU/insta2.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="Titan Universe project"
-                className="rounded-none object-cover w-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/TU/home.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/TU/mid.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="Titan Universe project"
-                className="rounded-none object-cover w-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/TU/insta2.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/TU/recent_posts.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="Titan Universe project"
-                className="rounded-none object-cover w-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/TU/mid.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/TU/footer.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="Titan Universe project"
-                className="rounded-none object-cover w-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/TU/recent_posts.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/TU/flyer.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="Titan Universe project"
-                className="rounded-none object-cover w-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
@@ -363,94 +363,94 @@ export default function Home() {
               <Badge className="bg-[#e5f2a5] text-[#252422] hover:bg-[#e5f2a5]/80">Graphic Design</Badge>
               <Badge className="bg-[#a5b941] text-[#252422] hover:bg-[#a5b941]/80">Web Development</Badge>
             </div>
-            <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+            <div className="flex overflow-x-auto gap-4 pb-8 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
-                src="/assets/ACM/NW1.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/ACM/NW1.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="NatureWonders hero"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/ACM/NW2.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/ACM/NW2.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="NatureWonders about"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/ACM/NW3.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/ACM/NW3.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="NatureWonders grid"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/ACM/NW4.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/ACM/NW4.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="NatureWonders Gallery"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+            <div className="flex overflow-x-auto gap-4 pb-8 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
-                src="/assets/ACM/NTI1.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/ACM/NTI1.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="NovaTech header"
-                className="rounded-none object-cover w-full h-full"
-              />
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"              
+                />
               <Image
-                src="/assets/ACM/NTI2.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/ACM/NTI2.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="NovaTech goals"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/ACM/NTI3.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/ACM/NTI3.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="NovaTech products & services"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/ACM/NTI4.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/ACM/NTI4.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="NovaTech about"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/ACM/NTI5.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/ACM/NTI5.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="NovaTech contact"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
             </div>
-            <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+            <div className="flex overflow-x-auto gap-4 pb-8 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
-                src="/assets/ACM/vinyl.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/ACM/vinyl.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="Vinyl E-commerce site"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/ACM/bisou 1.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/ACM/bisou 1.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="Bisou"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/ACM/fashion_landing.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/ACM/fashion_landing.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="Fashion Landing Page"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
@@ -467,13 +467,34 @@ export default function Home() {
             <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Badge className="bg-[#f256dc] text-[#252422] hover:bg-[#f256dc]/80">UX Design</Badge>
             </div>
-            <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
-              <Image
-                src="/assets/ACM/vinyl.png?height=200&width=300"
-                width={300}
-                height={200}
+            <div className="flex overflow-x-auto gap-4 pb-8 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+            <Image
+                src="/assets/MemoryBox/logo.png?height=500&width=200"
+                width={200}
+                height={500}
                 alt="MemoryBox project"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-200 h-full hover:scale-105 transition-transform duration-300"
+              />
+              <Image
+                src="/assets/MemoryBox/home_screen.png?height=500&width=200"
+                width={200}
+                height={500}
+                alt="MemoryBox project"
+                className="object-cover w-200 h-full hover:scale-105 transition-transform duration-300"
+              />
+              <Image
+                src="/assets/MemoryBox/add_friends.png?height=500&width=200"
+                width={200}
+                height={500}
+                alt="MemoryBox project"
+                className="object-cover w-200 h-full hover:scale-105 transition-transform duration-300"
+              />
+              <Image
+                src="/assets/MemoryBox/mailbox.png?height=500&width=200"
+                width={200}
+                height={500}
+                alt="MemoryBox project"
+                className="object-cover w-200 h-full hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
@@ -490,27 +511,27 @@ export default function Home() {
               <Badge className="bg-[#f256dc] text-[#252422] hover:bg-[#f256dc]/80">UX Design</Badge>
               <Badge className="bg-[#a5b941] text-[#252422] hover:bg-[#a5b941]/80">Web Development</Badge>
             </div>
-            <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+            <div className="flex overflow-x-auto gap-4 pb-8 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
-                src="/assets/BlogIt/Login 1.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/BlogIt/Login 1.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="MemoryBox project"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/BlogIt/dashboard.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/BlogIt/dashboard.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="MemoryBox project"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/BlogIt/new post.png?height=200&width=300"
-                width={300}
-                height={200}
+                src="/assets/BlogIt/new post.png?height=500&width=500"
+                width={500}
+                height={500}
                 alt="MemoryBox project"
-                className="rounded-none object-cover w-full h-full"
+                className="object-cover w-500 h-full hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
