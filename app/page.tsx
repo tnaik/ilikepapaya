@@ -199,7 +199,7 @@ export default function Home() {
           <section id="titan-radio" className="p-8 bg-[#ffffff]">
           <div className="mb-8">
             <div className="flex items-center gap-2 mb-2">
-            <h3 className="text-2xl text-[#464646]">TITAN RADIO</h3>
+            <h3 className="text-2xl text-[#464646]">TITAN RADIO<sup>(WIP)</sup></h3>
               <a href="https://titanradio.org" target="_blank" rel="noopener noreferrer" aria-label="Titan Universe website">
               <Image
                 src="/assets/new_window.svg"
@@ -222,6 +222,13 @@ export default function Home() {
             <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
                 src="/assets/TR/logo.png?height=200&width=300"
+                width={400}
+                height={200}
+                alt="Titan Radio project"
+                className="rounded-none object-cover w-full h-full"
+              />
+              <Image
+                src="/assets/TR/hero.png?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Radio project"
@@ -236,13 +243,6 @@ export default function Home() {
               />
               <Image
                 src="/assets/TR/footer.png?height=200&width=300"
-                width={300}
-                height={200}
-                alt="Titan Radio project"
-                className="rounded-none object-cover w-full h-full"
-              />
-              <Image
-                src="/assets/TR/home.png?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Radio project"
@@ -280,32 +280,60 @@ export default function Home() {
             </div>
             <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
-                src="/placeholder.svg?height=200&width=300"
+                src="/assets/TU/flyer.png?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Universe project"
-                className="rounded-none object-cover w-full h-full"
+                className="rounded-none object-cover w-full"
               />
               <Image
-                src="/placeholder.svg?height=200&width=300"
+                src="/assets/TU/footer.png?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Universe project"
-                className="rounded-none object-cover w-full h-full"
+                className="rounded-none object-cover w-full"
               />
               <Image
-                src="/placeholder.svg?height=200&width=300"
+                src="/assets/TU/gallery.png?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Universe project"
-                className="rounded-none object-cover w-full h-full"
+                className="rounded-none object-cover w-full"
               />
               <Image
-                src="/placeholder.svg?height=200&width=300"
+                src="/assets/TU/header.png?height=200&width=300"
                 width={300}
                 height={200}
                 alt="Titan Universe project"
-                className="rounded-none object-cover w-full h-full"
+                className="rounded-none object-cover w-full"
+              />
+              <Image
+                src="/assets/TU/home.png?height=200&width=300"
+                width={300}
+                height={200}
+                alt="Titan Universe project"
+                className="rounded-none object-cover w-full"
+              />
+              <Image
+                src="/assets/TU/insta2.png?height=200&width=300"
+                width={300}
+                height={200}
+                alt="Titan Universe project"
+                className="rounded-none object-cover w-full"
+              />
+              <Image
+                src="/assets/TU/mid.png?height=200&width=300"
+                width={300}
+                height={200}
+                alt="Titan Universe project"
+                className="rounded-none object-cover w-full"
+              />
+              <Image
+                src="/assets/TU/recent_posts.png?height=200&width=300"
+                width={300}
+                height={200}
+                alt="Titan Universe project"
+                className="rounded-none object-cover w-full"
               />
             </div>
           </div>
@@ -337,31 +365,91 @@ export default function Home() {
             </div>
             <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
-                src="/placeholder.svg?height=200&width=300"
+                src="/assets/ACM/NW1.png?height=200&width=300"
                 width={300}
                 height={200}
-                alt="ACM project"
+                alt="NatureWonders hero"
                 className="rounded-none object-cover w-full h-full"
               />
               <Image
-                src="/placeholder.svg?height=200&width=300"
+                src="/assets/ACM/NW2.png?height=200&width=300"
                 width={300}
                 height={200}
-                alt="ACM project"
+                alt="NatureWonders about"
                 className="rounded-none object-cover w-full h-full"
               />
               <Image
-                src="/placeholder.svg?height=200&width=300"
+                src="/assets/ACM/NW3.png?height=200&width=300"
                 width={300}
                 height={200}
-                alt="ACM project"
+                alt="NatureWonders grid"
                 className="rounded-none object-cover w-full h-full"
               />
               <Image
-                src="/placeholder.svg?height=200&width=300"
+                src="/assets/ACM/NW4.png?height=200&width=300"
                 width={300}
                 height={200}
-                alt="ACM project"
+                alt="NatureWonders Gallery"
+                className="rounded-none object-cover w-full h-full"
+              />
+            </div>
+            <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+              <Image
+                src="/assets/ACM/NTI1.png?height=200&width=300"
+                width={300}
+                height={200}
+                alt="NovaTech header"
+                className="rounded-none object-cover w-full h-full"
+              />
+              <Image
+                src="/assets/ACM/NTI2.png?height=200&width=300"
+                width={300}
+                height={200}
+                alt="NovaTech goals"
+                className="rounded-none object-cover w-full h-full"
+              />
+              <Image
+                src="/assets/ACM/NTI3.png?height=200&width=300"
+                width={300}
+                height={200}
+                alt="NovaTech products & services"
+                className="rounded-none object-cover w-full h-full"
+              />
+              <Image
+                src="/assets/ACM/NTI4.png?height=200&width=300"
+                width={300}
+                height={200}
+                alt="NovaTech about"
+                className="rounded-none object-cover w-full h-full"
+              />
+              <Image
+                src="/assets/ACM/NTI5.png?height=200&width=300"
+                width={300}
+                height={200}
+                alt="NovaTech contact"
+                className="rounded-none object-cover w-full h-full"
+              />
+            </div>
+            <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+              <Image
+                src="/assets/ACM/vinyl.png?height=200&width=300"
+                width={300}
+                height={200}
+                alt="Vinyl E-commerce site"
+                className="rounded-none object-cover w-full h-full"
+              />
+              <Image
+                src="/assets/ACM/bisou 1.png?height=200&width=300"
+                width={300}
+                height={200}
+                alt="Bisou"
+                className="rounded-none object-cover w-full h-full"
+              />
+              <Image
+                src="/assets/ACM/fashion_landing.png?height=200&width=300"
+                width={300}
+                height={200}
+                alt="Fashion Landing Page"
                 className="rounded-none object-cover w-full h-full"
               />
             </div>
@@ -381,28 +469,44 @@ export default function Home() {
             </div>
             <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
-                src="/placeholder.svg?height=200&width=300"
+                src="/assets/ACM/vinyl.png?height=200&width=300"
+                width={300}
+                height={200}
+                alt="MemoryBox project"
+                className="rounded-none object-cover w-full h-full"
+              />
+            </div>
+          </div>
+          </section>
+
+          <section id="BlogIt" className="p-8 bg-[#ffffff]">
+          <div className="mt-2">
+            <h3 className="text-2xl mb-2 text-[#464646]">BlogIt!</h3>
+            <p className="text-sm text-[#7f7f7f] mb-4">
+              Web app designed using Figma for Software Engineering (CPSC362). 
+              <br />Reinventing blogging platforms for the new age. 
+            </p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              <Badge className="bg-[#f256dc] text-[#252422] hover:bg-[#f256dc]/80">UX Design</Badge>
+              <Badge className="bg-[#a5b941] text-[#252422] hover:bg-[#a5b941]/80">Web Development</Badge>
+            </div>
+            <div className="flex overflow-x-auto gap-1 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+              <Image
+                src="/assets/BlogIt/Login 1.png?height=200&width=300"
                 width={300}
                 height={200}
                 alt="MemoryBox project"
                 className="rounded-none object-cover w-full h-full"
               />
               <Image
-                src="/placeholder.svg?height=200&width=300"
+                src="/assets/BlogIt/dashboard.png?height=200&width=300"
                 width={300}
                 height={200}
                 alt="MemoryBox project"
                 className="rounded-none object-cover w-full h-full"
               />
               <Image
-                src="/placeholder.svg?height=200&width=300"
-                width={300}
-                height={200}
-                alt="MemoryBox project"
-                className="rounded-none object-cover w-full h-full"
-              />
-              <Image
-                src="/placeholder.svg?height=200&width=300"
+                src="/assets/BlogIt/new post.png?height=200&width=300"
                 width={300}
                 height={200}
                 alt="MemoryBox project"
