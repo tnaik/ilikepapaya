@@ -12,8 +12,18 @@ const instrumentSerif = Instrument_Serif({
 
 export const metadata: Metadata = {
   title: 'ilikepapaya',
-  description: 'tanisha site',
+  description: 'tanisha naik - creative technologist',
   generator: 'v0.dev',
+  openGraph: {
+    title: 'Your Site Title',
+    description: 'Your site description',
+    images: [{
+      url: '/assets/tanisha.jpeg',
+      width: 1200,
+      height: 630,
+      alt: 'Site preview image',
+    }],
+  }
 }
 
 export default function RootLayout({
