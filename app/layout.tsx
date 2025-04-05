@@ -15,8 +15,8 @@ export const metadata: Metadata = {
   description: 'tanisha naik - creative technologist',
   generator: 'v0.dev',
   openGraph: {
-    title: 'Your Site Title',
-    description: 'Your site description',
+    title: 'ilikepapaya',
+    description: 'tanisha naik - creative technologist',
     images: [{
       url: '/assets/tanisha.jpeg',
       width: 1200,
