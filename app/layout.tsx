@@ -19,8 +19,8 @@ export const metadata: Metadata = {
     description: 'tanisha naik - creative technologist',
     images: [{
       url: '/assets/tanisha.jpeg',
-      width: 1200,
-      height: 630,
+      width: 1000,
+      height: 300,
       alt: 'Site preview image',
     }],
   }
