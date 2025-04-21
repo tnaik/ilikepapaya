@@ -22,7 +22,13 @@ const instrumentSerif = Instrument_Serif({
 
 export const metadata: Metadata = {
   title: "Tanisha's Portfolio",
-  description: "Portfolio website showcasing design and development work",
+  description: "Showcasing UX Design & Graphic Work for Web & App",
+  openGraph: {
+    title: "Tanisha Naik's Portfolio",
+    description: 'Showcasing UX Design & Graphic Work for Web & App',
+    type: "website",
+    images:"./public/assets/centralpark.jpeg"
+  }
 }
 
 export default function RootLayout({
