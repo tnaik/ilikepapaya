@@ -22,15 +22,39 @@ const instrumentSerif = Instrument_Serif({
 
 export const metadata: Metadata = {
   title: "Tanisha's Portfolio",
-  description: "Showcasing UX Design & Graphic Work for Web & App",
+  description: "Showcasing UX Design & Graphic Work for Web, App, & More.",
+  metadataBase: new URL("https://ilikepapaya.vercel.app"),
+  keywords: ["UX Design", "Web Development", "Portfolio", "Graphic Design", "Tanisha Naik"],
+  authors: [{ name: "Tanisha Naik" }],
+  creator: "Tanisha Naik",
+  publisher: "Tanisha Naik",
   openGraph: {
     title: "Tanisha Naik's Portfolio",
-    description: 'Showcasing UX Design & Graphic Work for Web & App',
+    description: "Showcasing UX Design & Graphic Work for Web, App, & More.",
     type: "website",
-    images:"./public/assets/centralpark.jpeg",
-    url:"ilikepapaya.vercel.app",
-    siteName:"ilikepapaya"
-  }
+    url: "https://ilikepapaya.vercel.app",
+    siteName: "ilikepapaya",
+    locale: "en_US",
+    images: [
+      {
+        url: "/assets/centralpark.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Tanisha Naik's Portfolio - UX Design & Web Development",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tanisha Naik's Portfolio",
+    description: "Showcasing UX Design & Graphic Work for Web, App, & More.",
+    images: ["/assets/centralpark.jpeg"],
+    creator: "@tanishanaik",
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
 }
 
 export default function RootLayout({
