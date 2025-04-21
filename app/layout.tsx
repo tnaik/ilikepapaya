@@ -27,7 +27,9 @@ export const metadata: Metadata = {
     title: "Tanisha Naik's Portfolio",
     description: 'Showcasing UX Design & Graphic Work for Web & App',
     type: "website",
-    images:"./public/assets/centralpark.jpeg"
+    images:"./public/assets/centralpark.jpeg",
+    url:"ilikepapaya.vercel.app",
+    siteName:"ilikepapaya"
   }
 }
 
