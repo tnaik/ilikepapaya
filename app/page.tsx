@@ -245,6 +245,13 @@ export default function Home() {
                 className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"              
                 />
             </div>
+            {/* Case Study Button */}
+            <Link href="/case-studies/ACM">
+            <Button variant="outline" className="text-black ring-1 ring-black hover:bg-[black] hover:text-[white] gap-2">
+              See Case Study
+              <BookOpenText className="h-4 w-4" />
+            </Button>
+            </Link>
           </div>
           </section>
 
@@ -275,6 +282,13 @@ export default function Home() {
                 className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
               />
             </div>
+            {/* Case Study Button */}
+            <Link href="/case-studies/memory-box">
+            <Button variant="outline" className="text-black ring-1 ring-black hover:bg-[black] hover:text-[white] gap-2">
+              See Case Study
+              <BookOpenText className="h-4 w-4" />
+            </Button>
+          </Link>
           </div>
           </section>
 
