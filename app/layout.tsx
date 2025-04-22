@@ -111,7 +111,7 @@ export default function RootLayout({
 
                 <li>
                   <Link
-                    href="/case-studies/titan-universe"
+                    href="#titan-universe"
                     className="block hover:text-black"
                     aria-label="Titan Universe"
                   >
