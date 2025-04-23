@@ -2,7 +2,7 @@ import Image from "next/image"
 import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { ArrowLeft } from "lucide-react"
+import { ArrowLeft, Play } from "lucide-react"
 
 export default function MemoryBoxCaseStudy() {
   return (
@@ -81,19 +81,6 @@ export default function MemoryBoxCaseStudy() {
           The purpose of this digital time capsule is to preserve and share meaningful memories, stories, and moments in a way that makes them accessible for future generations. It allows people to capture what they love, ensuring that their experiences, connections, and milestones are not forgotten over time. By creating a lasting digital archive, it helps keep those memories alive and connected to the people who matter most. With that goal in mind, my team, Yulie L. & I were able to place 3rd within the competition.
           </p>
 
-          <div className="my-8">
-            <Image
-              src="/assets/ACM/vinyl.png?height=500&width=1000"
-              width={1000}
-              height={500}
-              alt="100 Days of Design — Vinyl E-commerce storefront"
-              className="rounded-md w-full h-auto"
-            />
-            <p className="text-sm text-center text-gray-500 mt-2">
-              100 Days of Design — Vinyl E-commerce storefront
-            </p>
-          </div>
-
           {/* Discovery & Research */}
 
           <h3 className="text-2xl md:text-3xl font-medium font-serif mb-4 text-[#464646]">Discovery & Research</h3>
@@ -145,8 +132,8 @@ export default function MemoryBoxCaseStudy() {
           </p>
           <div className="my-8">
             <Image
-              src="/assets/MemoryBox/logo.png?height=500&width=500"
-              width={500}
+              src="/assets/MemoryBox/F4.png?height=500&width=1000"
+              width={1000}
               height={500}
               alt="MemoryBox"
               className="rounded-md w-500 h-auto"
@@ -155,7 +142,57 @@ export default function MemoryBoxCaseStudy() {
 
           {/* Features */}
 
-          <h3 className="text-2xl md:text-3xl font-medium font-serif mb-4 text-[#464646]">Features</h3>
+          <h3 className="text-2xl md:text-3xl font-medium font-serif text-[#464646]">Features</h3>
+          
+          {/* Video Section */}
+        <div className="my-12 bg-[#fafafa] p-6 rounded-lg">
+          <h2 className="text-2xl font-medium text-[#464646] mb-4">Feature 1 — Menu & Home Interface</h2>
+          <p className="text-[#7f7f7f] mb-6">
+            Watch a brief walkthrough of navigating the main app homepage.
+          </p>
+
+          <div className="relative aspect-video bg-black rounded-md overflow-hidden">
+            {/* Video Element */}
+            <video className="w-full h-full object-cover" controls poster="/assets/MemoryBox/F1.png" preload="metadata" muted>
+              <source src="/assets/MemoryBox/MB1_Feature1.mov" type="video/quicktime" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <p className="text-sm text-center text-[#7f7f7f] mt-3">
+            Titan Universe website walkthrough showcasing responsive design and content features
+          </p>
+        </div>
+
+        <div className="my-12 bg-[#fafafa] p-6 rounded-lg">
+          <h2 className="text-2xl font-medium text-[#464646] mb-4">Feature 2 — Mailbox Page</h2>
+          <p className="text-[#7f7f7f] mb-6">
+            Watch a brief walkthrough of navigating the mailbox page where users can see their chats & sent gifts from their added loved ones.
+          </p>
+
+          <div className="relative aspect-video bg-black rounded-md overflow-hidden">
+            {/* Video Element */}
+            <video className="w-full h-full object-cover" controls poster="/assets/MemoryBox/F2.png" preload="metadata" muted>
+              <source src="/assets/MemoryBox/MB1_Feature2.mov" type="video/quicktime" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <div className="my-12 bg-[#fafafa] p-6 rounded-lg">
+          <h2 className="text-2xl font-medium text-[#464646] mb-4">Feature 3 — Find Loved Ones Page</h2>
+          <p className="text-[#7f7f7f] mb-6">
+            Watch a brief walkthrough of navigating the loved ones page where users can send digital motifs & add more loved ones.
+          </p>
+
+          <div className="relative aspect-video bg-black rounded-md overflow-hidden">
+            {/* Video Element */}
+            <video className="w-full h-full object-cover" controls poster="/assets/MemoryBox/F3.png" preload="metadata" muted>
+              <source src="/assets/MemoryBox/MB1_Feature3.mov" type="video/quicktime" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
 
           {/* Future Ideas & Prospects */}
 
