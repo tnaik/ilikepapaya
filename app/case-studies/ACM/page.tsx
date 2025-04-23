@@ -114,7 +114,7 @@ export default function ACMCaseStudy() {
               NatureWonders Example Hero
             </p>
           </div>
-          
+
           <div className="my-8">
             <Image
               src="/assets/ACM/NTI1.png?height=500&width=1000"
@@ -159,7 +159,7 @@ export default function ACMCaseStudy() {
 
         {/* Back button at bottom */}
         <div className="mt-12 mb-8">
-          <Link href="/#titan-universe">
+          <Link href="/#acm">
             <Button variant="outline" className="text-black ring-1 ring-black hover:bg-[black] hover:text-[white]">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Projects
