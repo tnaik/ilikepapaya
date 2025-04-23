@@ -221,7 +221,7 @@ export default function MemoryBoxCaseStudy() {
 
         {/* Back button at bottom */}
         <div className="mt-12 mb-8">
-          <Link href="/#titan-universe">
+          <Link href="/#memory-box">
             <Button variant="outline" className="text-black ring-1 ring-black hover:bg-[black] hover:text-[white]">
               <ArrowLeft className="mr-2 h-4 w-4" />
               Back to Projects
