@@ -9,9 +9,9 @@ import { ExternalLink } from "lucide-react"
 
 export default function Home() {
   return (
-    <div className="w-full overscroll-none">
+    <div className="w-full">
       {/* Main Content */}
-      <div className="flex-1 bg-[#fafafa] overflow-y-auto ">
+      <div className="flex-1 bg-[#fafafa] overflow-y-auto overscroll-none">
 
         {/* About Section */}
         <section id="about" className="p-8 bg-[#ffffff]">
@@ -156,7 +156,7 @@ export default function Home() {
             </div>
             <p className="text-sm text-[#7f7f7f] mb-4">
             College blog website for Cal State University, Fullerton. Built using Wordpress, HTML, CSS, & JS.
-            <br></br>Along social media graphics for Instagram, built using Canva & Figma.
+            <br></br>Along with social media graphics for Instagram, built using Canva & Figma. 
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <Badge className="bg-[#5db3f1] text-[#252422] hover:bg-[#5db3f1]/80">Wordpress</Badge>
@@ -207,7 +207,7 @@ export default function Home() {
               </a>
             </div>
             <p className="text-sm text-[#7f7f7f] mb-4">
-              Designs for the Computer Science & Engineering chapters at Cal State University, Fullerton. <br />
+              Creatively engineered & demonstrated concepts for the largest tech club at Cal State University, Fullerton. <br />
               Designed apps, flyers, websites, & graphics. Hosted several workshops related to Design & Technology.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
