@@ -60,14 +60,14 @@ export default function MemoryBoxCaseStudy() {
 
           <div className="my-8">
             <Image
-              src="/assets/MemoryBox/Memorybox2.png?height=500&width=1000"
+              src="/assets/MemoryBox/memorybox2.png?height=500&width=1000"
               width={1000}
               height={500}
-              alt="MemorBox Mockup"
+              alt="MemoryBox Mockup"
               className="rounded-md w-full h-auto"
             />
             <p className="text-sm text-center text-gray-500 mt-2">
-              MemorBox Mockup
+              MemoryBox Mockup
             </p>
           </div>
 

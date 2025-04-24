@@ -143,14 +143,13 @@ export default function RootLayout({
             <p className="text-m mt-8 text-[#464646]">Contact</p>
 
             <div className="mt-2 flex flex-row gap-2">
-              <Badge className="gap-1 font-medium bg-[#42C97E] text-[#252422] hover:bg-[#42C97E]/80">
+              <a 
+                href="https://drive.google.com/file/d/1NuSAJtLfGgDwauEFxVH1Y4_xS0yQ4oGY/view?usp=sharing" 
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Link to resume">
+              <Badge className="gap-1 p-2 font-medium bg-[#42C97E] text-[#252422] hover:bg-[#42C97E]/80">
                 Resume
-                <a
-                  href="https://drive.google.com/file/d/1NuSAJtLfGgDwauEFxVH1Y4_xS0yQ4oGY/view?usp=sharing"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Link to resume"
-                >
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 24 24"
@@ -163,8 +162,8 @@ export default function RootLayout({
                       clipRule="evenodd"
                     />
                   </svg>
-                </a>
               </Badge>
+            </a>
 
               <Badge className="gap-1 bg-[#F7DD43] text-[#252422] hover:bg-[#F7DD43]/80">
                 <a
