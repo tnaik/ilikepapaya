@@ -21,7 +21,7 @@ const instrumentSerif = Instrument_Serif({
 })
 
 export const metadata: Metadata = {
-  title: "Tanisha's Portfolio",
+  title: "Tanisha Naik's Portfolio",
   description: "Showcasing UX Design & Graphic Work for Web, App, & More.",
   metadataBase: new URL("https://ilikepapaya.vercel.app"),
   keywords: ["UX Design", "Web Development", "Portfolio", "Graphic Design", "Tanisha Naik"],
@@ -50,6 +50,9 @@ export const metadata: Metadata = {
     description: "Showcasing UX Design & Graphic Work for Web, App, & More.",
     images: ["/assets/centralpark.jpeg"],
     creator: "@tanishanaik",
+  },
+  icons: {
+    icon: [{ url: "/favicon.ico" }],
   },
   robots: {
     index: true,
