@@ -3,10 +3,12 @@ import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Play } from "lucide-react"
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export default function MemoryBoxCaseStudy() {
   return (
     <div className="w-full bg-white overflow-y-auto p-2 md:p-8">
+      <GoogleAnalytics />
       <div className="max-w-4xl mx-auto">
         {/* Back button */}
         <Link href="/#memory-box">

@@ -5,6 +5,7 @@ import "./globals.css"
 import Link from "next/link"
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
+import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 const inter = Inter({
   subsets: ["latin"],
@@ -67,6 +68,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <GoogleAnalytics />
       <body className={`${inter.variable} ${instrumentSerif.variable} font-sans`}>
         <div className="flex flex-col md:flex-row min-h-screen Instrument-Serif">
           {/* Sidebar Navigation */}
