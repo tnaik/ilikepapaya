@@ -96,10 +96,15 @@ export default function Home() {
             </div>
             <div>
               <p className="text-[#7f7f7f] mb-4">Open for freelance projects, from branding, interface design, even marketing assets!</p>
+              <a
+                  href="mailto:tanishapnaik@gmail.com?subject=Interested%20in%20your%20work...&body=Let's%20Connect!"
+                  aria-label="Link to email draft"
+              >
               <Button variant="outline" className="text-black ring-1 ring-black hover:bg-[black] hover:text-[white] gap-2">
               Contact
               <Mail className="h-4 w-4" />
-            </Button>
+              </Button>
+              </a>
             </div>
           </div>
         </section>
