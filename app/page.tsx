@@ -3,6 +3,7 @@ import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { BookOpenText } from "lucide-react"
+import { Mail } from "lucide-react"
 import { BackToTop } from "@/components/bring-to-top"
 import { transform } from "next/dist/build/swc/generated-native"
 import { ExternalLink } from "lucide-react"
@@ -33,23 +34,23 @@ export default function Home() {
                 learner, constantly expanding my toolkit to shape tomorrow's design solutions.
               </p>
               <p className="mb-4 text-[#7f7f7f]">
-                Senior Computer Science student at California State University, Fullerton.
+                Currently looking for freelance projects for empathetic & creative digital spaces. 
               </p>
-              <p className="text-[#7f7f7f]">Aside from design — I enjoy rock climbing, taking photos, and swimming!</p>
+              <p className="text-[#7f7f7f]">Aside from design — I enjoy rock climbing, taking photos, & swimming!</p>
 
               <h2 className="text-3xl font-medium mt-8 mb-4 text-[#464646]">Skills</h2>
-              <div className="space-y-2">
-                <p className="text-[#7f7f7f]">
-                  <span className="font-medium text-[#7f7f7f]">Design:</span> Figma, Adobe Creative Cloud (Premiere Pro,
-                  Illustrator, Photoshop, InDesign)
-                </p>
-                <p className="text-[#7f7f7f]">
-                  <span className="font-medium text-[#7f7f7f]">Development:</span> HTML/CSS/JS, React, Next.js, TailwindCSS, Wordpress
-                </p>
-                <p className="text-[#7f7f7f]">
-                  <span className="font-medium text-[#7f7f7f]">Skillsets:</span> Video Editing, Photography, Digital
-                  Marketing, SEO Analytics
-                </p>
+                <div className="grid grid-cols-3 md:grid-cols-3 mt-6 justify-stretch">
+                  <p className="text-[#7f7f7f]">
+                    <span className="font-medium text-[#7f7f7f]">Design:<br></br></span> Figma, Adobe Creative Cloud (Premiere Pro,
+                    Illustrator, Photoshop, InDesign)
+                  </p>
+                  <p className="text-[#7f7f7f]">
+                    <span className="font-medium text-[#7f7f7f]">Development:<br></br></span> HTML/CSS/JS, React, Next.js, TailwindCSS, Wordpress
+                  </p>
+                  <p className="text-[#7f7f7f]">
+                    <span className="font-medium text-[#7f7f7f]">Skillsets:<br></br></span> Video Editing, Photography, Digital
+                    Marketing, SEO Analytics
+                  </p>
               </div>
 
               <div className="grid grid-cols-4 md:grid-cols-4 gap-1 mt-6">
@@ -91,10 +92,14 @@ export default function Home() {
           <h2 className="text-3xl font-medium mb-6 text-[#464646]">Work</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-[#7f7f7f]">Digital tinkerer @ <a href="https://titanradio.org" target="_blank" rel="noopener noreferrer"><u>Titan Radio</u></a>, reshaping college radio for the web.</p>
+              <p className="text-[#7f7f7f]">Product designer building intuitive solutions @ <u>AIFA Labs</u>.</p>
             </div>
             <div>
-              <p className="text-[#7f7f7f]">Experience designer building intuitive solutions @ <u>AIFA Labs</u>.</p>
+              <p className="text-[#7f7f7f] mb-4">Open for freelance projects, from branding, interface design, even marketing assets!</p>
+              <Button variant="outline" className="text-black ring-1 ring-black hover:bg-[black] hover:text-[white] gap-2">
+              Contact
+              <Mail className="h-4 w-4" />
+            </Button>
             </div>
           </div>
         </section>
