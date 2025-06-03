@@ -18,7 +18,7 @@ export default function Home() {
           <div className="flex flex-col items-left gap-8">
             <div className="w-40 h-auto mb-4">
               <Image
-                src="/assets/tanisha.jpeg?height=200&width=200"
+                src="/assets/tanisha_upd.jpeg?height=200&width=200"
                 width={200}
                 height={200}
                 alt="Profile"
