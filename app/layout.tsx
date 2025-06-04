@@ -151,7 +151,7 @@ export default function RootLayout({
 
             <div className="mt-2 flex flex-row gap-2">
               <a 
-                href="https://drive.google.com/file/d/1NuSAJtLfGgDwauEFxVH1Y4_xS0yQ4oGY/view?usp=sharing" 
+                href="https://drive.google.com/file/d/1gLxHGeQLmNp7gsrbu3GMdWekpYgEYh5G/view?usp=sharing" 
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Link to resume">
