@@ -1,6 +1,6 @@
 import type React from "react"
 import type { Metadata } from "next"
-import { Inter, Instrument_Serif } from "next/font/google"
+import { Inter, Bebas_Neue } from "next/font/google"
 import "./globals.css"
 import Link from "next/link"
 import Image from "next/image"
@@ -14,11 +14,10 @@ const inter = Inter({
   display: "swap",
 })
 
-const instrumentSerif = Instrument_Serif({
-  weight: ["400"],
-  style: ["normal", "italic"],
+const bebasNeue = Bebas_Neue({
+  weight: "400",
   subsets: ["latin"],
-  variable: "--font-instrument-serif",
+  variable: "--font-bebas-neue",
   display: "swap",
 })
 
@@ -71,28 +70,20 @@ export default function RootLayout({
     <html lang="en">
       <GoogleAnalytics />
       <Analytics />
-      <body className={`${inter.variable} ${instrumentSerif.variable} font-sans`}>
-        <div className="flex flex-col md:flex-row min-h-screen Instrument-Serif">
+      <body className={`${inter.variable} ${bebasNeue.variable} font-sans`}>
+        <div className="flex flex-col md:flex-row min-h-screen Cormorant-Garamond">
           {/* Sidebar Navigation */}
           <div className="w-full md:w-80 bg-[#FAFAFA] p-8 border-b md:border-r border-[#d9d9d9 to-40%] md:sticky md:top-0 md:h-screen relative overscroll-none">
             <div className="mb-8">
               <div className="flex flex-row gap-2">
                 <Link href="/">
-                  <h1 className="text-2xl font-medium text-[#464646]">Hello! I'm Tanisha</h1>
+                  <h1 className="text-2xl font-medium text-[#464646]">Tanisha Naik</h1>
                 </Link>
-                <Image
-                  src="/assets/peace.svg"
-                  width={30}
-                  height={30}
-                  alt="Profile"
-                  className="rounded-sm object-cover"
-                />
               </div>
-              <p className="text-sm text-[#7f7f7f] mt-2">
-                An aspiring creative technologist, imagining & crafting for digital experiences.
+              <p className="text-sm text-[#7f7f7f] mt-2 w:full">
+              I help product teams move from ideas to intentional, interactive experiences through design and code. 
               </p>
             </div>
-
             {/* Navbar */}
             <nav className="space-y-4">
               <Link href="/#about" className="block text-[#464646] hover:text-black" aria-label="Link to About section">
@@ -111,8 +102,8 @@ export default function RootLayout({
 
               <ul className="pl-2 space-y-1 text-sm text-[#7f7f7f]">
                 <li>
-                  <Link href="/#titan-radio" className="block hover:text-black" aria-label="Titan Radio (WIP)">
-                    • Titan Radio <sup>(WIP)</sup>
+                  <Link href="/#projects" className="block hover:text-black" aria-label="Titan Radio (WIP)">
+                    01 Titan Radio <sup>(WIP)</sup>
                   </Link>
                 </li>
 
@@ -122,25 +113,25 @@ export default function RootLayout({
                     className="block hover:text-black"
                     aria-label="Titan Universe"
                   >
-                    • Titan Universe
+                    02 Titan Universe
                   </Link>
                 </li>
 
                 <li>
                   <Link href="/#acm" className="block hover:text-black" aria-label="ACM (Associated Works)">
-                    • ACM <sup>(Associated Works)</sup>
+                    03 ACM <sup>(Associated Works)</sup>
                   </Link>
                 </li>
 
                 <li>
                   <Link href="/#memory-box" className="block hover:text-black" aria-label="Link to MemoryBox section">
-                    • MemoryBox
+                    04 MemoryBox
                   </Link>
                 </li>
 
                 <li>
                   <Link href="/#BlogIt" className="block hover:text-black" aria-label="Link to BlogIt section">
-                    • BlogIt!
+                    05 BlogIt!
                   </Link>
                 </li>
               </ul>
