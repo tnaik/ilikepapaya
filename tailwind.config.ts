@@ -20,9 +20,8 @@ const config = {
     },
     extend: {
       fontFamily: {
-        serif: ['"Instrument Serif"', 'serif'],
-        sans: ['-apple-system', 'BlinkMacSystemFont', 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'sans-serif'],
-        display: ["swap"],
+        serif: ['var(--font-bebas-neue)', 'sans-serif'],
+        sans: ['var(--font-inter)', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",

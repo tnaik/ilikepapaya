@@ -3,7 +3,11 @@ import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { BookOpenText } from "lucide-react"
+import { CircleArrowRight } from 'lucide-react';
+import { BookOpen } from 'lucide-react';
+import { Mail } from "lucide-react"
 import { BackToTop } from "@/components/bring-to-top"
+import { SkillsTabs } from "@/components/skills-tabs"
 import { transform } from "next/dist/build/swc/generated-native"
 import { ExternalLink } from "lucide-react"
 
@@ -18,7 +22,7 @@ export default function Home() {
           <div className="flex flex-col items-left gap-8">
             <div className="w-40 h-auto mb-4">
               <Image
-                src="/assets/tanisha.jpeg?height=200&width=200"
+                src="/assets/tanisha_upd.jpeg"
                 width={200}
                 height={200}
                 alt="Profile"
@@ -27,59 +31,62 @@ export default function Home() {
               />
             </div>
             <div className="w:full">
-              <h2 className="text-3xl font-medium mb-4 text-[#464646]">About</h2>
+              <h2 className="text-2xl font-medium mb-4 text-[#464646]">Product Designer, Creative Technologist</h2>
+              <div className="">
               <p className="mb-4 text-[#7f7f7f]">
-                Passionate about bridging creative & technical skills to craft thoughtful digital experiences. An avid
-                learner, constantly expanding my toolkit to shape tomorrow's design solutions.
+              Based in Southern California. Passionate about bridging creative & technical skills to craft intentional digital experiences.
+              <br></br>Lifelong learner, expanding my toolkit to shape tomorrow’s design solutions. 
               </p>
               <p className="mb-4 text-[#7f7f7f]">
-                Senior Computer Science student at California State University, Fullerton.
+                I currently design @ AiFA Labs for AI systems in enterprise. Previously, I worked in TV & Radio from producing social content to making creative code for live music events. 
+                Studied computer science at Cal State Fullerton. Hosted workshops & designathons to encourage students in art, design, & code. 
+                Recently finished a project designing for an AI research tool in civic tech. 
               </p>
-              <p className="text-[#7f7f7f]">Aside from design — I enjoy rock climbing, taking photos, and swimming!</p>
-
-              <h2 className="text-3xl font-medium mt-8 mb-4 text-[#464646]">Skills</h2>
-              <div className="space-y-2">
-                <p className="text-[#7f7f7f]">
-                  <span className="font-medium text-[#7f7f7f]">Design:</span> Figma, Adobe Creative Cloud (Premiere Pro,
-                  Illustrator, Photoshop, InDesign)
-                </p>
-                <p className="text-[#7f7f7f]">
-                  <span className="font-medium text-[#7f7f7f]">Development:</span> HTML/CSS/JS, React, Next.js, TailwindCSS, Wordpress
-                </p>
-                <p className="text-[#7f7f7f]">
-                  <span className="font-medium text-[#7f7f7f]">Skillsets:</span> Video Editing, Photography, Digital
-                  Marketing, SEO Analytics
-                </p>
               </div>
+
+              <h2 className="text-2xl font-medium mt-6 text-[#464646]">Skills</h2>
+              <SkillsTabs />
 
               <div className="grid grid-cols-4 md:grid-cols-4 gap-1 mt-6">
                 <Image
-                  src="/assets/peopleonpismo.jpeg?height=200&width=200"
+                  src="/assets/peopleonpismo.jpeg"
                   width={200}
                   height={200}
                   alt="People on Pismo Beach"
                   className="object-cover w-full h-full"
+                  priority
+                  quality={85}
+                  sizes="(max-width: 768px) 25vw, 200px"
                 />
                 <Image
-                  src="/assets/centralpark.jpeg?height=200&width=200"
+                  src="/assets/centralpark.jpeg"
                   width={200}
                   height={200}
                   alt="Central Park, New York City"
                   className="object-cover w-full h-full"
+                  priority
+                  quality={85}
+                  sizes="(max-width: 768px) 25vw, 200px"
                 />
                 <Image
-                  src="/assets/band.jpeg?height=200&width=200"
+                  src="/assets/band.jpeg"
                   width={200}
                   height={200}
                   alt="Band & Crowd for Girls Just Wanna Have Punk show"
                   className="object-cover w-full h-full"
+                  priority
+                  quality={85}
+                  sizes="(max-width: 768px) 25vw, 200px"
                 />
                 <Image
-                  src="/assets/pismo.jpeg?height=200&width=200"
+                  src="/assets/pismo.jpeg"
                   width={200}
                   height={200}
                   alt="Pismo Beach during Sunset"
                   className="object-cover w-full h-full"
+                  priority
+                  quality={85}
+                  sizes="(max-width: 768px) 25vw, 200px"
                 />
               </div>
             </div>
@@ -87,35 +94,38 @@ export default function Home() {
         </section>
 
         {/* Work Section */}
-        <section id="work" className="p-8 bg-white">
-          <h2 className="text-3xl font-medium mb-6 text-[#464646]">Work</h2>
+        <section id="work" className="pl-8 pr-8 pb-8 bg-white">
+          <h2 className="text-2xl font-medium mb-4 text-[#464646]">Work</h2>
           <div className="space-y-4">
             <div>
-              <p className="text-[#7f7f7f]">Digital tinkerer @ <a href="https://titanradio.org" target="_blank" rel="noopener noreferrer"><u>Titan Radio</u></a>, reshaping college radio for the web.</p>
+              <p className="text-[#7f7f7f]">Product designer building intuitive solutions @ <u>AIFA Labs</u>.</p>
             </div>
             <div>
-              <p className="text-[#7f7f7f]">Experience designer building intuitive solutions @ <u>AIFA Labs</u>.</p>
+              <p className="text-[#7f7f7f] mb-4">Open for freelance projects, from branding, interface design, even marketing assets!</p>
+              <a
+                  href="mailto:tanishapnaik@gmail.com?subject=Interested%20in%20your%20work...&body=Let's%20Connect!"
+                  aria-label="Link to email draft"
+              >
+                <Button variant="outline" className="text-black ring-1 ring-black hover:bg-[black] hover:text-[white] gap-2">
+                <h3 className="text-xl">Contact</h3>
+                <Mail size={18} strokeWidth={2.5}/>
+              </Button>
+              </a>
             </div>
           </div>
         </section>
 
         {/* Projects Section */}
         <section id="projects" className="bg-[#ffffff]">
-        <h2 className="text-3xl font-medium text-[#464646] pt-8 pl-8 pr-8">Projects</h2>
+        <h2 className="text-2xl font-medium text-[#464646] pb-4 pl-8 pr-8">Projects</h2>
 
           {/* Titan Radio Project */}
-          <section id="titan-radio" className="p-8 bg-[#ffffff]">
-          <div className="mb-8">
+          <section id="titan-radio" className="pl-8 pr-8 bg-[#ffffff]">
+          <div className="mb-4">
             <div className="flex items-center gap-2 mb-2">
-            <h3 className="text-2xl text-[#464646]">TITAN RADIO<sup>(WIP)</sup></h3>
+            <h3 className="text-2xl text-[#464646]">01 TITAN RADIO<sup>(WIP)</sup></h3>
               <a href="https://titanradio.org" target="_blank" rel="noopener noreferrer" aria-label="Titan Radio website">
-              <Image
-                src="/assets/new_window.svg"
-                width={20}
-                height={20}
-                alt="New window"
-                className="rounded-sm object-cover"
-              />
+              <CircleArrowRight size={20} color="#464646" strokeWidth={3} />
               </a>
             </div>
             <p className="text-sm text-[#7f7f7f] mb-4">
@@ -129,11 +139,13 @@ export default function Home() {
             </div>
             <div className="flex overflow-x-auto gap-4 pb-8 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
-                src="/assets/TR/TR1.png?height=500&width=1000"
+                src="/assets/TR/TR1.png"
                 width={1000}
                 height={500}
                 alt="Titan Radio project"
                 className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
+                quality={85}
+                sizes="(max-width: 768px) 100vw, 1000px"
               />
             </div>
           </div>
@@ -143,15 +155,9 @@ export default function Home() {
           <section id="titan-universe" className="p-8 bg-[#ffffff]">
           <div className="mb-8">
             <div className="flex items-center gap-2 mb-2">
-              <h3 className="text-2xl text-[#464646]">TITAN UNIVERSE</h3>
+              <h3 className="text-2xl text-[#464646]">02 TITAN UNIVERSE</h3>
               <a href="https://titanuniverse.org" target="_blank" rel="noopener noreferrer" aria-label="Titan Universe website">
-              <Image
-                src="/assets/new_window.svg"
-                width={20}
-                height={20}
-                alt="New window"
-                className="rounded-sm object-cover"
-              />
+              <CircleArrowRight size={20} color="#464646" strokeWidth={3} />
               </a>
             </div>
             <p className="text-sm text-[#7f7f7f] mb-4">
@@ -167,14 +173,14 @@ export default function Home() {
             </div>
             <div className="flex overflow-x-auto gap-4 pb-8 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
-                src="/assets/TU/TU1.png?height=500&width=1000"
+                src="/assets/TU/TU1.png"
                 width={1000}
                 height={500}
                 alt="Titan Universe project"
                 className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/TU/TU2.png?height=500&width=1000"
+                src="/assets/TU/TU2.png"
                 width={1000}
                 height={500}
                 alt="Titan Universe project"
@@ -184,8 +190,8 @@ export default function Home() {
             {/* Case Study Button */}
             <Link href="/case-studies/titan-universe">
             <Button variant="outline" className="text-black ring-1 ring-black hover:bg-[black] hover:text-[white] gap-2">
-              See Case Study
-              <BookOpenText className="h-4 w-4" />
+              <h3 className="text-xl">Case Study</h3>
+              <BookOpen size={18} strokeWidth={2.5}/>
             </Button>
           </Link>
           </div>
@@ -195,15 +201,9 @@ export default function Home() {
           <section id="acm" className="p-8 bg-[#ffffff]">
           <div className="mb-8">
             <div className="flex items-center gap-2 mb-2">
-              <h3 className="text-2xl text-[#464646]">ACM — Associated Works</h3>
+              <h3 className="text-2xl text-[#464646]">03 ACM — Associated Works</h3>
               <a href="https://acmcsuf.com" target="_blank" rel="noopener noreferrer" aria-label="Titan Universe website">
-              <Image
-                src="/assets/new_window.svg"
-                width={20}
-                height={20}
-                alt="New window"
-                className="rounded-none object-cover w-full h-full"
-              />
+              <CircleArrowRight size={20} color="#464646" strokeWidth={3} />
               </a>
             </div>
             <p className="text-sm text-[#7f7f7f] mb-4">
@@ -217,28 +217,28 @@ export default function Home() {
             </div>
             <div className="flex overflow-x-auto gap-4 pb-8 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
-                src="/assets/ACM/NW1.png?height=500&width=1000"
+                src="/assets/ACM/NW1.png"
                 width={1000}
                 height={500}
                 alt="NatureWonders hero"
                 className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/ACM/vinyl.png?height=500&width=1000"
+                src="/assets/ACM/vinyl.png"
                 width={1000}
                 height={500}
                 alt="Vinyl E-commerce site"
                 className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/ACM/bisou 1.png?height=500&width=1000"
+                src="/assets/ACM/bisou 1.png"
                 width={1000}
                 height={500}
                 alt="Bisou"
                 className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/ACM/NTI1.png?height=500&width=1000"
+                src="/assets/ACM/NTI1.png"
                 width={1000}
                 height={500}
                 alt="NovaTech header"
@@ -248,8 +248,8 @@ export default function Home() {
             {/* Case Study Button */}
             <Link href="/case-studies/ACM">
             <Button variant="outline" className="text-black ring-1 ring-black hover:bg-[black] hover:text-[white] gap-2">
-              See Case Study
-              <BookOpenText className="h-4 w-4" />
+              <h3 className="text-xl">Case Study</h3>
+              <BookOpen size={18} strokeWidth={2.5}/>
             </Button>
             </Link>
           </div>
@@ -258,7 +258,7 @@ export default function Home() {
           {/* MemoryBox Project */}
           <section id="memory-box" className="p-8 bg-[#ffffff]">
           <div className="mb-8">
-            <h3 className="text-2xl mb-2 text-[#464646]">MemoryBox</h3>
+            <h3 className="text-2xl mb-2 text-[#464646]">04 MemoryBox</h3>
             <p className="text-sm text-[#7f7f7f] mb-4">
               Web project designed using Figma for Code&Crush Designathon (presented by CSUF Society of Women Engineers), placing 3rd. 
               <br />Reimagining means of preserving love, virtually. 
@@ -268,14 +268,14 @@ export default function Home() {
             </div>
             <div className="flex overflow-x-auto gap-4 pb-8 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
-                src="/assets/MemoryBox/Memorybox1.png?height=500&width=1000"
+                src="/assets/MemoryBox/Memorybox1.png"
                 width={1000}
                 height={500}
                 alt="MemoryBox project"
                 className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/MemoryBox/memorybox2.png?height=500&width=1000"
+                src="/assets/MemoryBox/memorybox2.png"
                 width={1000}
                 height={500}
                 alt="MemoryBox project"
@@ -285,8 +285,8 @@ export default function Home() {
             {/* Case Study Button */}
             <Link href="/case-studies/memory-box">
             <Button variant="outline" className="text-black ring-1 ring-black hover:bg-[black] hover:text-[white] gap-2">
-              See Case Study
-              <BookOpenText className="h-4 w-4" />
+              <h3 className="text-xl">Case Study</h3>
+              <BookOpen size={18} strokeWidth={2.5}/>
             </Button>
           </Link>
           </div>
@@ -294,7 +294,7 @@ export default function Home() {
 
           <section id="BlogIt" className="p-8 bg-[#ffffff]">
           <div className="mt-2">
-            <h3 className="text-2xl mb-2 text-[#464646]">BlogIt!</h3>
+            <h3 className="text-2xl mb-2 text-[#464646]">05 BlogIt!</h3>
             <p className="text-sm text-[#7f7f7f] mb-4">
               Web app designed using Figma for Software Engineering (CPSC362). 
               <br />Reinventing blogging platforms for the new age. 
@@ -305,21 +305,21 @@ export default function Home() {
             </div>
             <div className="flex overflow-x-auto gap-4 pb-8 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
-                src="/assets/BlogIt/BlogIt1.png?height=500&width=1000"
+                src="/assets/BlogIt/BlogIt1.png"
                 width={1000}
                 height={500}
                 alt="BlogIt project"
                 className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/BlogIt/BlogIt2.png?height=500&width=1000"
+                src="/assets/BlogIt/BlogIt2.png"
                 width={1000}
                 height={500}
                 alt="BlogIt project"
                 className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
-                src="/assets/BlogIt/BlogIt3.png?height=500&width=1000"
+                src="/assets/BlogIt/BlogIt3.png"
                 width={1000}
                 height={500}
                 alt="BlogIt project"
@@ -330,8 +330,8 @@ export default function Home() {
           </section>
 
           <section id="coming-soon" className="p-8 bg-[#ffffff]">
-          <div className="mt-2">
-            <h3 className="text-2xl mb-2 text-[#464646]">Coming soon...</h3>
+          <div className="mb-8">
+            <h3 className="text-2xl mb-2 text-[#464646]">Coming soon</h3>
             <p className="text-sm text-[#7f7f7f]">Designing, tinkering, creating more projects...</p>
           </div>
           </section>
