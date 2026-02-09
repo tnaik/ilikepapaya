@@ -29,13 +29,15 @@ export function SkillsTabs() {
       'Next.js',
       'TailwindCSS',
       'Wordpress', 
-      'Vibe Coding'
+      'v0', 
+      'Claude Code',
     ],
     skillsets: [
       'Video Editing',
       'Photography',
       'Digital Marketing',
-      'SEO Analytics'
+      'SEO Analytics',
+      'Social Media'
     ]
   }
 

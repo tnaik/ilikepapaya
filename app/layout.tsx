@@ -99,11 +99,17 @@ export default function RootLayout({
               >
                 Projects
               </Link>
-
               <ul className="pl-2 space-y-1 text-sm text-[#7f7f7f]">
+
                 <li>
                   <Link href="/#projects" className="block hover:text-black" aria-label="Titan Radio (WIP)">
-                    01 Titan Radio <sup>(WIP)</sup>
+                    01 Infilla
+                  </Link>
+                </li>
+
+                <li>
+                  <Link href="/#projects" className="block hover:text-black" aria-label="Titan Radio (WIP)">
+                    02 Titan Radio <sup>(WIP)</sup>
                   </Link>
                 </li>
 
@@ -113,25 +119,25 @@ export default function RootLayout({
                     className="block hover:text-black"
                     aria-label="Titan Universe"
                   >
-                    02 Titan Universe
+                    03 Titan Universe
                   </Link>
                 </li>
 
                 <li>
                   <Link href="/#acm" className="block hover:text-black" aria-label="ACM (Associated Works)">
-                    03 ACM <sup>(Associated Works)</sup>
+                    04 ACM <sup>(Associated Works)</sup>
                   </Link>
                 </li>
 
                 <li>
                   <Link href="/#memory-box" className="block hover:text-black" aria-label="Link to MemoryBox section">
-                    04 MemoryBox
+                    05 MemoryBox
                   </Link>
                 </li>
 
                 <li>
                   <Link href="/#BlogIt" className="block hover:text-black" aria-label="Link to BlogIt section">
-                    05 BlogIt!
+                    06 BlogIt!
                   </Link>
                 </li>
               </ul>
