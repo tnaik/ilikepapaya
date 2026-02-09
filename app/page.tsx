@@ -8,6 +8,8 @@ import { BookOpen } from 'lucide-react';
 import { Mail } from "lucide-react"
 import { BackToTop } from "@/components/bring-to-top"
 import { SkillsTabs } from "@/components/skills-tabs"
+import { CalendlyButton } from "@/components/calendly-button"
+import { CollapsibleGallery } from "@/components/collapsible-gallery"
 import { transform } from "next/dist/build/swc/generated-native"
 import { ExternalLink } from "lucide-react"
 
@@ -38,92 +40,77 @@ export default function Home() {
               <br></br>Lifelong learner, expanding my toolkit to shape tomorrow’s design solutions. 
               </p>
               <p className="mb-4 text-[#7f7f7f]">
-                I currently design @ AiFA Labs for AI systems in enterprise. Previously, I worked in TV & Radio from producing social content to making creative code for live music events. 
+                I currently design at AiFA Labs for AI systems in enterprise. Previously, I worked in TV & Radio from producing social content to making creative code for live music events. 
                 Studied computer science at Cal State Fullerton. Hosted workshops & designathons to encourage students in art, design, & code. 
                 Recently finished a project designing for an AI research tool in civic tech. 
               </p>
+              <p className="text-[#7f7f7f] mb-4">Let's chat about building meaningful digital experiences.</p>
+              <div className="flex flex-row flex-wrap gap-2">
+                {/* New Open to Projects Button */}
+                <CalendlyButton />
               </div>
-
+              </div>
               <h2 className="text-2xl font-medium mt-6 text-[#464646]">Skills</h2>
               <SkillsTabs />
-
-              <div className="grid grid-cols-4 md:grid-cols-4 gap-1 mt-6">
-                <Image
-                  src="/assets/peopleonpismo.jpeg"
-                  width={200}
-                  height={200}
-                  alt="People on Pismo Beach"
-                  className="object-cover w-full h-full"
-                  priority
-                  quality={85}
-                  sizes="(max-width: 768px) 25vw, 200px"
-                />
-                <Image
-                  src="/assets/centralpark.jpeg"
-                  width={200}
-                  height={200}
-                  alt="Central Park, New York City"
-                  className="object-cover w-full h-full"
-                  priority
-                  quality={85}
-                  sizes="(max-width: 768px) 25vw, 200px"
-                />
-                <Image
-                  src="/assets/band.jpeg"
-                  width={200}
-                  height={200}
-                  alt="Band & Crowd for Girls Just Wanna Have Punk show"
-                  className="object-cover w-full h-full"
-                  priority
-                  quality={85}
-                  sizes="(max-width: 768px) 25vw, 200px"
-                />
-                <Image
-                  src="/assets/pismo.jpeg"
-                  width={200}
-                  height={200}
-                  alt="Pismo Beach during Sunset"
-                  className="object-cover w-full h-full"
-                  priority
-                  quality={85}
-                  sizes="(max-width: 768px) 25vw, 200px"
-                />
-              </div>
             </div>
           </div>
         </section>
 
         {/* Work Section */}
         <section id="work" className="pl-8 pr-8 pb-8 bg-white">
-          <h2 className="text-2xl font-medium mb-4 text-[#464646]">Work</h2>
-          <div className="space-y-4">
-            <div>
-              <p className="text-[#7f7f7f]">Product designer building intuitive solutions @ <u>AIFA Labs</u>.</p>
-            </div>
-            <div>
-              <p className="text-[#7f7f7f] mb-4">Open for freelance projects, from branding, interface design, even marketing assets!</p>
-              <a
-                  href="mailto:tanishapnaik@gmail.com?subject=Interested%20in%20your%20work...&body=Let's%20Connect!"
-                  aria-label="Link to email draft"
-              >
-                <Button variant="outline" className="text-black ring-1 ring-black hover:bg-[black] hover:text-[white] gap-2">
-                <h3 className="text-xl">Contact</h3>
-                <Mail size={18} strokeWidth={2.5}/>
-              </Button>
-              </a>
-            </div>
-          </div>
+          <h2 className="text-2xl font-medium mb-4 text-[#464646]">Featured work</h2>
+          <CollapsibleGallery
+            images={[
+              { src: "/assets/TR/TRcode.mov", alt: "Creative Code Boiler Room Graphic for Titan Radio", link: "#titan-radio" },
+              { src: "/assets/TU/shoot.jpeg", alt: "Featured content shoot for Titan Universe", link: "#titan-universe" },
+              { src: "/assets/presentInfilla.jpg", alt: "Presenting Infilla Project in SF", link: "#acm" },
+              { src: "/assets/MemoryBox/memorybox2.png", alt: "Memorybox Mockup", link: "#memory-box" }
+            ]}
+          />
         </section>
 
         {/* Projects Section */}
         <section id="projects" className="bg-[#ffffff]">
         <h2 className="text-2xl font-medium text-[#464646] pb-4 pl-8 pr-8">Projects</h2>
+        
+        {/* Infilla */}
+        <section id="titan-radio" className="pl-8 pr-8 bg-[#ffffff]">
+          <div className="mb-4">
+            <div className="flex items-center gap-2 mb-2">
+            <h3 className="text-2xl text-[#464646]">01 INFILLA</h3>
+              <a href="https://www.infilla.com" target="_blank" rel="noopener noreferrer" aria-label="Infilla website">
+              <CircleArrowRight size={20} color="#464646" strokeWidth={3} />
+              </a>
+            </div>
+            <p className="text-sm text-[#7f7f7f] mb-4">
+            College radio website for Cal State University, Fullerton. Built using Wordpress, HTML, CSS, & JS.
+            <br></br>Along with graphics for concerts/shows, using Mixed Media & Creative Coding.
+            </p>
+            <div className="flex flex-wrap gap-2 mb-4">
+              <Badge className="bg-[#4ecdc4] text-[#252422] hover:bg-[#4ecdc4]/80">User Research</Badge>
+              <Badge className="bg-[#f256dc] text-[#252422] hover:bg-[#f256dc]/80">UX Design</Badge>
+              <Badge className="bg-[#a78bfa] text-[#252422] hover:bg-[#a78bfa]/80">Ideation</Badge>
+              <Badge className="bg-[#ff9f6d] text-[#252422] hover:bg-[#ff9f6d]/80">Prototyping</Badge>
+            </div>
+            <div className="flex overflow-x-auto gap-4 pb-8 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+              <Image
+                src="/assets/presentInfilla.jpg"
+                width={1000}
+                height={500}
+                alt="Presenting Infilla Project in SF"
+                className="object-contain max-h-[400px] w-auto hover:scale-105 transition-transform duration-300"
+                quality={85}
+                sizes="(max-width: 768px) 100vw, 500px"
+              />
+            </div>
+          </div>
+          </section>
 
           {/* Titan Radio Project */}
           <section id="titan-radio" className="pl-8 pr-8 bg-[#ffffff]">
           <div className="mb-4">
             <div className="flex items-center gap-2 mb-2">
-            <h3 className="text-2xl text-[#464646]">01 TITAN RADIO<sup>(WIP)</sup></h3>
+            <h3 className="text-2xl text-[#464646]">02 TITAN RADIO<sup>(WIP)</sup></h3>
               <a href="https://titanradio.org" target="_blank" rel="noopener noreferrer" aria-label="Titan Radio website">
               <CircleArrowRight size={20} color="#464646" strokeWidth={3} />
               </a>
@@ -155,7 +142,7 @@ export default function Home() {
           <section id="titan-universe" className="p-8 bg-[#ffffff]">
           <div className="mb-8">
             <div className="flex items-center gap-2 mb-2">
-              <h3 className="text-2xl text-[#464646]">02 TITAN UNIVERSE</h3>
+              <h3 className="text-2xl text-[#464646]">03 TITAN UNIVERSE</h3>
               <a href="https://titanuniverse.org" target="_blank" rel="noopener noreferrer" aria-label="Titan Universe website">
               <CircleArrowRight size={20} color="#464646" strokeWidth={3} />
               </a>
@@ -201,7 +188,7 @@ export default function Home() {
           <section id="acm" className="p-8 bg-[#ffffff]">
           <div className="mb-8">
             <div className="flex items-center gap-2 mb-2">
-              <h3 className="text-2xl text-[#464646]">03 ACM — Associated Works</h3>
+              <h3 className="text-2xl text-[#464646]">04 ACM — Associated Works</h3>
               <a href="https://acmcsuf.com" target="_blank" rel="noopener noreferrer" aria-label="Titan Universe website">
               <CircleArrowRight size={20} color="#464646" strokeWidth={3} />
               </a>
@@ -258,7 +245,7 @@ export default function Home() {
           {/* MemoryBox Project */}
           <section id="memory-box" className="p-8 bg-[#ffffff]">
           <div className="mb-8">
-            <h3 className="text-2xl mb-2 text-[#464646]">04 MemoryBox</h3>
+            <h3 className="text-2xl mb-2 text-[#464646]">05 MemoryBox</h3>
             <p className="text-sm text-[#7f7f7f] mb-4">
               Web project designed using Figma for Code&Crush Designathon (presented by CSUF Society of Women Engineers), placing 3rd. 
               <br />Reimagining means of preserving love, virtually. 
@@ -294,7 +281,7 @@ export default function Home() {
 
           <section id="BlogIt" className="p-8 bg-[#ffffff]">
           <div className="mt-2">
-            <h3 className="text-2xl mb-2 text-[#464646]">05 BlogIt!</h3>
+            <h3 className="text-2xl mb-2 text-[#464646]">06 BlogIt!</h3>
             <p className="text-sm text-[#7f7f7f] mb-4">
               Web app designed using Figma for Software Engineering (CPSC362). 
               <br />Reinventing blogging platforms for the new age. 
