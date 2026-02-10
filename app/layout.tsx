@@ -23,13 +23,13 @@ export const metadata: Metadata = {
   title: "Tanisha Naik's Portfolio",
   description: "Showcasing UX Design & Graphic Work for Web, App, & More.",
   metadataBase: new URL("https://ilikepapaya.vercel.app"),
-  keywords: ["UX Design", "Web Development", "Portfolio", "Graphic Design", "Tanisha Naik"],
+  keywords: ["UX Design", "Web Development", "Portfolio", "Branding", "Tanisha Naik"],
   authors: [{ name: "Tanisha Naik" }],
   creator: "Tanisha Naik",
   publisher: "Tanisha Naik",
   openGraph: {
     title: "Tanisha Naik's Portfolio",
-    description: "Showcasing UX Design & Graphic Work for Web, App, & More.",
+    description: "Showcasing Product Design, UX/UI & Branding for Web, App, & Digital Products.",
     type: "website",
     url: "https://ilikepapaya.vercel.app",
     siteName: "ilikepapaya",
@@ -39,14 +39,14 @@ export const metadata: Metadata = {
         url: "/assets/centralpark.jpeg",
         width: 1200,
         height: 630,
-        alt: "Tanisha Naik's Portfolio - UX Design & Web Development",
+        alt: "Tanisha Naik's Portfolio - Product Design, UX/UI, Branding, & Web Development",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Tanisha Naik's Portfolio",
-    description: "Showcasing UX Design & Graphic Work for Web, App, & More.",
+    description: "Tanisha Naik's Portfolio - Product Design, UX/UI, Branding, & Web Development",
     images: ["/assets/centralpark.jpeg"],
     creator: "@tanishanaik",
   },
@@ -69,7 +69,7 @@ export default function RootLayout({
       <GoogleAnalytics />
       <Analytics />
       <body className={`${inter.variable} ${bebasNeue.variable} font-sans`}>
-        <div className="flex flex-col md:flex-row min-h-screen Cormorant-Garamond">
+        <div className="flex flex-col md:flex-row min-h-screen Bebas-Neue">
           <NavigationSidebar />
 
           {/* Main Content */}

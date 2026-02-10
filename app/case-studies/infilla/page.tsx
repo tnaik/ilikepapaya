@@ -66,6 +66,7 @@ export default function InfillaCaseStudy() {
             height={500}
             alt="Presenting Infilla Project in SF"
             className="rounded-md w-full h-auto"
+            priority
           />
           <p className="text-sm text-center text-gray-500 mt-2">
             Presenting the Infilla project in San Francisco
@@ -98,6 +99,7 @@ export default function InfillaCaseStudy() {
               height={600}
               alt="Competitive analysis of AI platforms"
               className="rounded-md w-full h-auto"
+              loading="lazy"
             />
             <p className="text-sm text-center text-gray-500 mt-2">
               Competitive analysis of 10+ AI platforms
@@ -186,6 +188,7 @@ export default function InfillaCaseStudy() {
               height={600}
               alt="Design sketches and ideation"
               className="rounded-md w-full h-auto"
+              loading="lazy"
             />
             <p className="text-sm text-center text-gray-500 mt-2">
               Early design sketches and concept exploration
@@ -230,7 +233,6 @@ export default function InfillaCaseStudy() {
           <div className="my-8">
             <video
               src="/assets/infilla/Infilla%20-%20Suggested%20Filters%20(Edited).mp4"
-              autoPlay
               loop
               muted
               controls
@@ -249,7 +251,6 @@ export default function InfillaCaseStudy() {
             <div>
               <video
                 src="/assets/infilla/Infilla%20-%20Add%20Attachment%20(edited).mp4"
-                autoPlay
                 muted
                 controls
                 className="w-full rounded-sm"
@@ -265,7 +266,6 @@ export default function InfillaCaseStudy() {
             <div>
               <video
                 src="/assets/infilla/Infilla%20-%20Add%20Adress%20(edited).mp4"
-                autoPlay
                 muted
                 controls
                 className="w-full rounded-sm"
@@ -296,6 +296,7 @@ export default function InfillaCaseStudy() {
               controls
               className="w-full rounded-md"
               playsInline
+              preload="metadata"
             >
               Your browser does not support the video tag.
             </video>
@@ -362,6 +363,7 @@ export default function InfillaCaseStudy() {
               height={200}
               alt="Onboarding tooltip for Add Attachment filter"
               className="rounded-md w-full sm:w-3/4 md:w-2/3 h-auto"
+              loading="lazy"
             />
             <p className="text-sm text-center text-gray-500 mt-2">
               Onboarding tooltip explaining the Add Attachment filter
