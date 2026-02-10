@@ -357,7 +357,7 @@ export default function InfillaCaseStudy() {
 
           <div className="my-8 flex flex-col items-center">
             <Image
-              src="/assets/infilla/Onboarding-%20Add%20attachment%201.png"
+              src="/assets/infilla/OnboardingAddattachment1.png"
               width={400}
               height={200}
               alt="Onboarding tooltip for Add Attachment filter"
