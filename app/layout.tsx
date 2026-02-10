@@ -102,13 +102,13 @@ export default function RootLayout({
               <ul className="pl-2 space-y-1 text-sm text-[#7f7f7f]">
 
                 <li>
-                  <Link href="/#projects" className="block hover:text-black" aria-label="Titan Radio (WIP)">
+                  <Link href="/#projects" className="block hover:text-black" aria-label="Infilla">
                     01 Infilla
                   </Link>
                 </li>
 
                 <li>
-                  <Link href="/#projects" className="block hover:text-black" aria-label="Titan Radio (WIP)">
+                  <Link href="/#titan-radio" className="block hover:text-black" aria-label="Titan Radio (WIP)">
                     02 Titan Radio <sup>(WIP)</sup>
                   </Link>
                 </li>
