@@ -7,7 +7,7 @@ import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export default function MemoryBoxCaseStudy() {
   return (
-    <div className="w-full bg-white overflow-y-auto p-2 md:p-8">
+    <div className="w-full bg-white overflow-y-auto px-4 py-4 md:p-8">
       <GoogleAnalytics />
       <div className="max-w-4xl mx-auto">
         {/* Back button */}
@@ -93,7 +93,7 @@ export default function MemoryBoxCaseStudy() {
           Our research revealed that while physical mementos hold significant emotional value, they can deteriorate or be lost over time. Digital solutions often lack emotional depth or become inaccessible as platforms evolve. Memory Box bridges this gap by creating a permanent digital space that captures both the content and emotional context of meaningful memories, particularly focusing on relationships and love connections to align with the White Day theme.
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mb-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mb-8">
             <div className="my-8">
             <Image
               src="/assets/MemoryBox/res1.png?height=500&width=1000"
@@ -138,7 +138,7 @@ export default function MemoryBoxCaseStudy() {
               width={1000}
               height={500}
               alt="MemoryBox"
-              className="rounded-md w-500 h-auto"
+              className="rounded-md w-full md:max-w-[500px] h-auto"
             />
           </div>
 

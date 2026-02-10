@@ -33,7 +33,7 @@ export default function InfillaCaseStudy() {
   }, [])
 
   return (
-    <div className="w-full bg-white overflow-y-auto p-2 md:p-8">
+    <div className="w-full bg-white overflow-y-auto px-4 py-4 md:p-8">
       <GoogleAnalytics />
       <div className="max-w-4xl mx-auto">
         {/* Back button */}
@@ -145,7 +145,7 @@ export default function InfillaCaseStudy() {
             With our new direction set, we established three design principles to guide every decision:
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 my-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 my-8">
             <div className="p-4 bg-gray-50 rounded-lg">
               <Eye className="w-8 h-8 text-[#4ecdc4] mb-2"/>
               <div className="flex items-center gap-2 mb-2">
@@ -194,23 +194,23 @@ export default function InfillaCaseStudy() {
 
           <p className="text-base text-[#7f7f7f] mb-4">The concepts we explored included:</p>
           <div className="flex flex-wrap justify-center gap-4 my-8">
-            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full md:w-[calc(33.333%-1rem)] md:max-w-xs">
+            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] md:max-w-xs">
               <PanelLeft className="w-8 h-8 text-[#4ecdc4] flex-shrink-0 mt-0.5" />
               <p className="text-sm text-[#7f7f7f]">Side panel previews for quick source evaluation</p>
             </div>
-            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full md:w-[calc(33.333%-1rem)] md:max-w-xs">
+            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] md:max-w-xs">
               <Sparkles className="w-8 h-8 text-[#a78bfa] flex-shrink-0 mt-0.5" />
               <p className="text-sm text-[#7f7f7f]">AI-suggested filter chips based on query analysis</p>
             </div>
-            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full md:w-[calc(33.333%-1rem)] md:max-w-xs">
+            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] md:max-w-xs">
               <Layers className="w-8 h-8 text-[#f256dc] flex-shrink-0 mt-0.5" />
               <p className="text-sm text-[#7f7f7f]">Multi-source results combining Forum posts, codes, and laws</p>
             </div>
-            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full md:w-[calc(33.333%-1rem)] md:max-w-lg">
+            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] md:max-w-lg">
               <Highlighter className="w-8 h-8 text-[#ff9f6d] flex-shrink-0 mt-0.5" />
               <p className="text-sm text-[#7f7f7f]">Quick highlights for external documents</p>
             </div>
-            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full md:w-[calc(33.333%-1rem)] md:max-w-lg">
+            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] md:max-w-lg">
               <MapPin className="w-8 h-8 text-[#1bc53d] flex-shrink-0 mt-0.5" />
               <p className="text-sm text-[#7f7f7f]">Address and attachment-based search filters</p>
             </div>
@@ -329,7 +329,7 @@ export default function InfillaCaseStudy() {
           </p>
 
           <p className="text-md font-medium text-[#464646] mb-3">What we tested:</p>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 my-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 my-8">
             <div className="p-4 bg-gray-50 rounded-lg">
               <Search className="w-8 h-8 text-[#4ecdc4] mb-3" />
               <p className="text-md font-medium text-[#464646] mb-2">Concept 1</p>
@@ -361,7 +361,7 @@ export default function InfillaCaseStudy() {
               width={400}
               height={200}
               alt="Onboarding tooltip for Add Attachment filter"
-              className="rounded-md w-2/3 h-auto"
+              className="rounded-md w-full sm:w-3/4 md:w-2/3 h-auto"
             />
             <p className="text-sm text-center text-gray-500 mt-2">
               Onboarding tooltip explaining the Add Attachment filter
@@ -386,23 +386,23 @@ export default function InfillaCaseStudy() {
 
           <p className="text-md font-medium text-[#464646] mb-3 mt-8">Iterations we made:</p>
           <div className="flex flex-wrap justify-center gap-4 my-8">
-            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full md:w-[calc(33.333%-1rem)] md:max-w-xs">
+            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] md:max-w-xs">
               <BookOpen className="w-8 h-8 text-[#4ecdc4] flex-shrink-0 mt-0.5" />
               <p className="text-sm text-[#7f7f7f]">Added onboarding flow for new filter features</p>
             </div>
-            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full md:w-[calc(33.333%-1rem)] md:max-w-md">
+            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] md:max-w-md">
               <HelpCircle className="w-8 h-8 text-[#1bc53d] flex-shrink-0 mt-0.5" />
               <p className="text-sm text-[#7f7f7f]">Added "Why this appears" explanation section in side panel</p>
             </div>
-            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full md:w-[calc(33.333%-1rem)] md:max-w-xs">
+            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(33.333%-1rem)] md:max-w-xs">
               <MessageSquare className="w-8 h-8 text-[#a78bfa] flex-shrink-0 mt-0.5" />
               <p className="text-sm text-[#7f7f7f]">Added tooltip on hover for filter buttons</p>
             </div>
-            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full md:w-[calc(45%-1rem)] md:max-w-md">
+            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(45%-1rem)] md:max-w-md">
               <Layers className="w-8 h-8 text-[#ff9f6d] flex-shrink-0 mt-0.5" />
               <p className="text-sm text-[#7f7f7f]">Improved visual hierarchy in side panel (clearer separation between metadata and content)</p>
             </div>
-            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full md:w-[calc(45%-1rem)] md:max-w-xs">
+            <div className="flex items-start gap-3 p-4 bg-gray-50 rounded-lg w-full sm:w-[calc(50%-0.5rem)] md:w-[calc(45%-1rem)] md:max-w-xs">
               <Layout className="w-8 h-8 text-[#f256dc] flex-shrink-0 mt-0.5" />
               <p className="text-sm text-[#7f7f7f]">Explored search bar layout variants to reduce visual clutter</p>
             </div>

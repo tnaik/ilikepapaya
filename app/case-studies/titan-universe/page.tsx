@@ -7,7 +7,7 @@ import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export default function TitanUniverseCaseStudy() {
   return (
-    <div className="w-full bg-white overflow-y-auto p-2 md:p-8">
+    <div className="w-full bg-white overflow-y-auto px-4 py-4 md:p-8">
       <GoogleAnalytics />
       <div className="max-w-4xl mx-auto">
         {/* Back button */}
@@ -76,7 +76,7 @@ export default function TitanUniverseCaseStudy() {
           To initiate the redesign process, my first steps were to examine pain points within the site. I gathered responses from colleagues discussing changes to be made visually, heuristically, & efficiently without disabling the site for other users. With the research gathered, I narrowed my approach to 3 main pain points:
           </p>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-20 my-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8 sm:gap-12 md:gap-20 my-8">
             <div>
               <ol className="text-lg text-left text-[#464646] mt-2">Visually Unbalanced</ol>
               <li className="text-sm text-left text-[#7f7f7f] mt-2">Heavy visual weight, leaning to the left side due to list of social icons</li>
@@ -124,7 +124,7 @@ export default function TitanUniverseCaseStudy() {
               <li className="text-sm text-left text-[#7f7f7f] mt-2">Organized Navigation Bar</li>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-8">
           <div className="my-8">
             <Image
               src="/assets/TU/gallery.png?height=500&width=1000"

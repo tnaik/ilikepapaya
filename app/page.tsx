@@ -20,9 +20,9 @@ export default function Home() {
       <div className="flex-1 bg-[#fafafa] overflow-y-auto overscroll-none">
 
         {/* About Section */}
-        <section id="about" className="p-8 bg-[#ffffff]">
+        <section id="about" className="p-4 md:p-8 bg-[#ffffff]">
           <div className="flex flex-col items-left gap-8">
-            <div className="w-40 h-auto mb-4">
+            <div className="w-32 sm:w-36 md:w-40 h-auto mb-4">
               <Image
                 src="/assets/tanisha_upd.jpeg"
                 width={200}
@@ -33,7 +33,7 @@ export default function Home() {
               />
             </div>
             <div className="w:full">
-              <h2 className="text-2xl font-medium mb-4 text-[#464646]">Product Designer, Creative Technologist</h2>
+              <h2 className="text-xl sm:text-2xl font-medium mb-4 text-[#464646]">Product Designer, Creative Technologist</h2>
               <div className="">
               <p className="mb-4 text-[#7f7f7f]">
               Based in Southern California. Passionate about bridging creative & technical skills to craft intentional digital experiences.
@@ -57,13 +57,13 @@ export default function Home() {
         </section>
 
         {/* Work Section */}
-        <section id="work" className="pl-8 pr-8 pb-8 bg-white">
+        <section id="work" className="px-4 md:px-8 pb-8 bg-white">
           <h2 className="text-2xl font-medium mb-4 text-[#464646]">Featured work</h2>
           <CollapsibleGallery
             images={[
               { src: "/assets/TR/TRcode.mov", alt: "Creative Code Boiler Room Graphic for Titan Radio", link: "#titan-radio" },
               { src: "/assets/TU/shoot.jpeg", alt: "Featured content shoot for Titan Universe", link: "#titan-universe" },
-              { src: "/assets/presentInfilla.jpg", alt: "Presenting Infilla Project in SF", link: "#acm" },
+              { src: "/assets/presentInfilla.jpg", alt: "Presenting Infilla Project in SF", link: "#infilla" },
               { src: "/assets/MemoryBox/memorybox2.png", alt: "Memorybox Mockup", link: "#memory-box" }
             ]}
           />
@@ -71,13 +71,13 @@ export default function Home() {
 
         {/* Projects Section */}
         <section id="projects" className="bg-[#ffffff]">
-        <h2 className="text-2xl font-medium text-[#464646] pb-4 pl-8 pr-8">Projects</h2>
-        
+        <h2 className="text-2xl font-medium text-[#464646] pb-4 px-4 md:px-8">Projects</h2>
+
         {/* Infilla */}
-        <section id="infilla" className="pl-8 pr-8 bg-[#ffffff]">
+        <section id="infilla" className="px-4 md:px-8 bg-[#ffffff]">
           <div className="mb-8">
             <div className="flex items-center gap-2 mb-2">
-            <h3 className="text-2xl text-[#464646]">01 INFILLA</h3>
+            <h3 className="text-xl sm:text-2xl md:text-2xl text-[#464646]">01 INFILLA</h3>
               <a href="https://www.infilla.com" target="_blank" rel="noopener noreferrer" aria-label="Infilla website">
               <CircleArrowRight size={20} color="#464646" strokeWidth={3} />
               </a>
@@ -98,7 +98,7 @@ export default function Home() {
                 width={1000}
                 height={500}
                 alt="Infilla Thumbnail"
-                className="object-contain max-h-[400px] w-auto hover:scale-105 transition-transform duration-300"
+                className="object-contain max-h-[500px] sm:max-h-[350px] md:max-h-[400px] w-auto hover:scale-105 transition-transform duration-300"
                 quality={85}
                 sizes="(max-width: 768px) 100vw, 1000px"
               />
@@ -108,7 +108,7 @@ export default function Home() {
                 loop
                 muted
                 controls
-                className="object-contain max-h-[400px] w-auto rounded-sm hover:scale-105 transition-transform duration-300"
+                className="object-contain max-h-[250px] sm:max-h-[350px] md:max-h-[400px] w-auto rounded-sm hover:scale-105 transition-transform duration-300"
                 playsInline
               >
                 Your browser does not support the video tag.
@@ -119,7 +119,7 @@ export default function Home() {
                 autoPlay
                 loop
                 muted
-                className="object-cover w-auto max-h-[400px] rounded-sm hover:scale-105 transition-transform duration-300"
+                className="object-cover max-h-[250px] sm:max-h-[350px] md:max-h-[400px] w-auto rounded-sm hover:scale-105 transition-transform duration-300"
                 playsInline
               >
                 Your browser does not support the video tag.
@@ -136,10 +136,10 @@ export default function Home() {
           </section>
 
           {/* Titan Radio Project */}
-          <section id="titan-radio" className="pl-8 pr-8 bg-[#ffffff]">
+          <section id="titan-radio" className="px-4 md:px-8 bg-[#ffffff]">
           <div className="mb-4">
             <div className="flex items-center gap-2 mb-2">
-            <h3 className="text-2xl text-[#464646]">02 TITAN RADIO<sup>(WIP)</sup></h3>
+            <h3 className="text-xl sm:text-2xl md:text-2xl text-[#464646]">02 TITAN RADIO<sup>(WIP)</sup></h3>
               <a href="https://titanradio.org" target="_blank" rel="noopener noreferrer" aria-label="Titan Radio website">
               <CircleArrowRight size={20} color="#464646" strokeWidth={3} />
               </a>
@@ -159,7 +159,7 @@ export default function Home() {
                 width={1000}
                 height={500}
                 alt="Titan Radio project"
-                className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
+                className="object-cover w-full md:w-auto md:max-w-[1000px] h-full hover:scale-105 transition-transform duration-300"
                 quality={85}
                 sizes="(max-width: 768px) 100vw, 1000px"
               />
@@ -168,10 +168,10 @@ export default function Home() {
           </section>
 
           {/* Titan Universe Project */}
-          <section id="titan-universe" className="p-8 bg-[#ffffff]">
+          <section id="titan-universe" className="p-4 md:p-8 bg-[#ffffff]">
           <div className="mb-8">
             <div className="flex items-center gap-2 mb-2">
-              <h3 className="text-2xl text-[#464646]">03 TITAN UNIVERSE</h3>
+              <h3 className="text-xl sm:text-2xl md:text-2xl text-[#464646]">03 TITAN UNIVERSE</h3>
               <a href="https://titanuniverse.org" target="_blank" rel="noopener noreferrer" aria-label="Titan Universe website">
               <CircleArrowRight size={20} color="#464646" strokeWidth={3} />
               </a>
@@ -193,14 +193,14 @@ export default function Home() {
                 width={1000}
                 height={500}
                 alt="Titan Universe project"
-                className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
+                className="object-cover w-full md:w-auto md:max-w-[1000px] h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
                 src="/assets/TU/TU2.png"
                 width={1000}
                 height={500}
                 alt="Titan Universe project"
-                className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
+                className="object-cover w-full md:w-auto md:max-w-[1000px] h-full hover:scale-105 transition-transform duration-300"
               />
             </div>
             {/* Case Study Button */}
@@ -214,10 +214,10 @@ export default function Home() {
           </section>
 
           {/* ACM Project */}
-          <section id="acm" className="p-8 bg-[#ffffff]">
+          <section id="acm" className="p-4 md:p-8 bg-[#ffffff]">
           <div className="mb-8">
             <div className="flex items-center gap-2 mb-2">
-              <h3 className="text-2xl text-[#464646]">04 ACM — Associated Works</h3>
+              <h3 className="text-xl sm:text-2xl md:text-2xl text-[#464646]">04 ACM — Associated Works</h3>
               <a href="https://acmcsuf.com" target="_blank" rel="noopener noreferrer" aria-label="Titan Universe website">
               <CircleArrowRight size={20} color="#464646" strokeWidth={3} />
               </a>
@@ -237,28 +237,28 @@ export default function Home() {
                 width={1000}
                 height={500}
                 alt="NatureWonders hero"
-                className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
+                className="object-cover w-full md:w-auto md:max-w-[1000px] h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
                 src="/assets/ACM/vinyl.png"
                 width={1000}
                 height={500}
                 alt="Vinyl E-commerce site"
-                className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
+                className="object-cover w-full md:w-auto md:max-w-[1000px] h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
                 src="/assets/ACM/bisou 1.png"
                 width={1000}
                 height={500}
                 alt="Bisou"
-                className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
+                className="object-cover w-full md:w-auto md:max-w-[1000px] h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
                 src="/assets/ACM/NTI1.png"
                 width={1000}
                 height={500}
                 alt="NovaTech header"
-                className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
+                className="object-cover w-full md:w-auto md:max-w-[1000px] h-full hover:scale-105 transition-transform duration-300"
                 />
             </div>
             {/* Case Study Button */}
@@ -272,9 +272,9 @@ export default function Home() {
           </section>
 
           {/* MemoryBox Project */}
-          <section id="memory-box" className="p-8 bg-[#ffffff]">
+          <section id="memory-box" className="p-4 md:p-8 bg-[#ffffff]">
           <div className="mb-8">
-            <h3 className="text-2xl mb-2 text-[#464646]">05 MemoryBox</h3>
+            <h3 className="text-xl sm:text-2xl md:text-2xl mb-2 text-[#464646]">05 MemoryBox</h3>
             <p className="text-sm text-[#7f7f7f] mb-4">
               Web project designed using Figma for Code&Crush Designathon (presented by CSUF Society of Women Engineers), placing 3rd. 
               <br />Reimagining means of preserving love, virtually. 
@@ -288,14 +288,14 @@ export default function Home() {
                 width={1000}
                 height={500}
                 alt="MemoryBox project"
-                className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
+                className="object-cover w-full md:w-auto md:max-w-[1000px] h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
                 src="/assets/MemoryBox/memorybox2.png"
                 width={1000}
                 height={500}
                 alt="MemoryBox project"
-                className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
+                className="object-cover w-full md:w-auto md:max-w-[1000px] h-full hover:scale-105 transition-transform duration-300"
               />
             </div>
             {/* Case Study Button */}
@@ -308,9 +308,9 @@ export default function Home() {
           </div>
           </section>
 
-          <section id="BlogIt" className="p-8 bg-[#ffffff]">
+          <section id="BlogIt" className="p-4 md:p-8 bg-[#ffffff]">
           <div className="mt-2">
-            <h3 className="text-2xl mb-2 text-[#464646]">06 BlogIt!</h3>
+            <h3 className="text-xl sm:text-2xl md:text-2xl mb-2 text-[#464646]">06 BlogIt!</h3>
             <p className="text-sm text-[#7f7f7f] mb-4">
               Web app designed using Figma for Software Engineering (CPSC362). 
               <br />Reinventing blogging platforms for the new age. 
@@ -325,29 +325,29 @@ export default function Home() {
                 width={1000}
                 height={500}
                 alt="BlogIt project"
-                className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
+                className="object-cover w-full md:w-auto md:max-w-[1000px] h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
                 src="/assets/BlogIt/BlogIt2.png"
                 width={1000}
                 height={500}
                 alt="BlogIt project"
-                className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
+                className="object-cover w-full md:w-auto md:max-w-[1000px] h-full hover:scale-105 transition-transform duration-300"
               />
               <Image
                 src="/assets/BlogIt/BlogIt3.png"
                 width={1000}
                 height={500}
                 alt="BlogIt project"
-                className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
+                className="object-cover w-full md:w-auto md:max-w-[1000px] h-full hover:scale-105 transition-transform duration-300"
               />
             </div>
           </div>
           </section>
 
-          <section id="coming-soon" className="p-8 bg-[#ffffff]">
+          <section id="coming-soon" className="p-4 md:p-8 bg-[#ffffff]">
           <div className="mb-8">
-            <h3 className="text-2xl mb-2 text-[#464646]">Coming soon</h3>
+            <h3 className="text-xl sm:text-2xl md:text-2xl mb-2 text-[#464646]">Coming soon</h3>
             <p className="text-sm text-[#7f7f7f]">Designing, tinkering, creating more projects...</p>
           </div>
           </section>

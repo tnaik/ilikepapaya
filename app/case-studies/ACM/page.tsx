@@ -7,7 +7,7 @@ import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export default function ACMCaseStudy() {
   return (
-    <div className="w-full bg-white overflow-y-auto p-2 md:p-8">
+    <div className="w-full bg-white overflow-y-auto px-4 py-4 md:p-8">
       <GoogleAnalytics />
       <div className="max-w-4xl mx-auto">
         {/* Back button */}
@@ -103,7 +103,7 @@ export default function ACMCaseStudy() {
           </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 my-8">
             <div className="my-8">
             <Image
               src="/assets/ACM/NW1.png?height=500&width=1000"
