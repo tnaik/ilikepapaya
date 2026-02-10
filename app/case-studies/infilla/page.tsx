@@ -238,7 +238,7 @@ export default function InfillaCaseStudy() {
               controls
               className="w-full rounded-sm"
               playsInline
-              preload="metadata"
+              preload="auto"
             >
               Your browser does not support the video tag.
             </video>
@@ -255,7 +255,7 @@ export default function InfillaCaseStudy() {
                 controls
                 className="w-full rounded-sm"
                 playsInline
-                preload="metadata"
+                preload="auto"
               >
                 Your browser does not support the video tag.
               </video>
@@ -270,7 +270,7 @@ export default function InfillaCaseStudy() {
                 controls
                 className="w-full rounded-sm"
                 playsInline
-                preload="metadata"
+                preload="auto"
               >
                 Your browser does not support the video tag.
               </video>
@@ -296,7 +296,7 @@ export default function InfillaCaseStudy() {
               controls
               className="w-full rounded-md"
               playsInline
-              preload="metadata"
+              preload="auto"
             >
               Your browser does not support the video tag.
             </video>

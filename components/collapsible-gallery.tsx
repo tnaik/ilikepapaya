@@ -63,6 +63,7 @@ export function CollapsibleGallery({ images }: CollapsibleGalleryProps) {
                     muted
                     loop
                     playsInline
+                    preload="auto"
                   />
                 ) : (
                   <Image
