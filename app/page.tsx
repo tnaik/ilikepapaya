@@ -74,8 +74,8 @@ export default function Home() {
         <h2 className="text-2xl font-medium text-[#464646] pb-4 pl-8 pr-8">Projects</h2>
         
         {/* Infilla */}
-        <section id="titan-radio" className="pl-8 pr-8 bg-[#ffffff]">
-          <div className="mb-4">
+        <section id="infilla" className="pl-8 pr-8 bg-[#ffffff]">
+          <div className="mb-8">
             <div className="flex items-center gap-2 mb-2">
             <h3 className="text-2xl text-[#464646]">01 INFILLA</h3>
               <a href="https://www.infilla.com" target="_blank" rel="noopener noreferrer" aria-label="Infilla website">
@@ -83,8 +83,8 @@ export default function Home() {
               </a>
             </div>
             <p className="text-sm text-[#7f7f7f] mb-4">
-            College radio website for Cal State University, Fullerton. Built using Wordpress, HTML, CSS, & JS.
-            <br></br>Along with graphics for concerts/shows, using Mixed Media & Creative Coding.
+            Civic tech research project redesigning AI-enhanced search for Infilla Forum, a Q&A platform used by city planners in NYC and SF.
+            <br></br>Led research and ideation for a 13-week project with Infilla, helping planners find zoning answers faster by using AI to surface regulatory information.
             </p>
             <div className="flex flex-wrap gap-2 mb-4">
               <Badge className="bg-[#4ecdc4] text-[#252422] hover:bg-[#4ecdc4]/80">User Research</Badge>
@@ -92,17 +92,46 @@ export default function Home() {
               <Badge className="bg-[#a78bfa] text-[#252422] hover:bg-[#a78bfa]/80">Ideation</Badge>
               <Badge className="bg-[#ff9f6d] text-[#252422] hover:bg-[#ff9f6d]/80">Prototyping</Badge>
             </div>
-            <div className="flex overflow-x-auto gap-4 pb-8 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
+            <div className="flex overflow-x-auto gap-4 pb-4 scrollbar-thin scrollbar-thumb-gray-300 scrollbar-track-transparent">
               <Image
-                src="/assets/presentInfilla.jpg"
+                src="/assets/infilla/thumbnail.png"
                 width={1000}
                 height={500}
-                alt="Presenting Infilla Project in SF"
+                alt="Infilla Thumbnail"
                 className="object-contain max-h-[400px] w-auto hover:scale-105 transition-transform duration-300"
                 quality={85}
-                sizes="(max-width: 768px) 100vw, 500px"
+                sizes="(max-width: 768px) 100vw, 1000px"
               />
+              <video
+                src="/assets/infilla/Infilla%20-%20Side%20Panel%20(edited).mp4"
+                autoPlay
+                loop
+                muted
+                controls
+                className="object-contain max-h-[400px] w-auto rounded-sm hover:scale-105 transition-transform duration-300"
+                playsInline
+              >
+                Your browser does not support the video tag.
+              </video>
+              <video
+                src="/assets/infilla/Infilla%20-%20Suggested%20Filters%20(Edited).mp4"
+                controls
+                autoPlay
+                loop
+                muted
+                className="object-cover w-auto max-h-[400px] rounded-sm hover:scale-105 transition-transform duration-300"
+                playsInline
+              >
+                Your browser does not support the video tag.
+              </video>
             </div>
+            {/* Case Study Button */}
+            <Link href="/case-studies/infilla">
+              <Button variant="outline" className="mb-4 text-black ring-1 ring-black hover:bg-[black] hover:text-[white] gap-2">
+                <h3 className="text-xl">Case Study</h3>
+                <BookOpen size={18} strokeWidth={2.5}/>
+              </Button>
+            </Link>
           </div>
           </section>
 
@@ -229,7 +258,7 @@ export default function Home() {
                 width={1000}
                 height={500}
                 alt="NovaTech header"
-                className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"              
+                className="object-cover w-1000 h-full hover:scale-105 transition-transform duration-300"
                 />
             </div>
             {/* Case Study Button */}
