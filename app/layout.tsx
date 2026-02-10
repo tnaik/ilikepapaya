@@ -69,7 +69,7 @@ export default function RootLayout({
       <GoogleAnalytics />
       <Analytics />
       <body className={`${inter.variable} ${bebasNeue.variable} font-sans`}>
-        <div className="flex flex-col md:flex-row min-h-screen Bebas-Neue">
+        <div className="flex flex-col md:flex-row min-h-screen Cormorant-Garamond">
           <NavigationSidebar />
 
           {/* Main Content */}
