@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <div className="w-full">
       {/* Main Content */}
-      <div className="flex-1 bg-[#fafafa] overflow-y-auto overscroll-none">
+      <div className="flex-1 bg-[#fafafa] overflow-y-auto">
 
         {/* About Section */}
         <section id="about" className="p-4 md:p-8 bg-[#ffffff]">
