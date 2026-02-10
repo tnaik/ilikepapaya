@@ -15,7 +15,7 @@ import { ExternalLink } from "lucide-react"
 
 export default function Home() {
   return (
-    <div className="w-full">
+    <div className="flex-1 min-w-0">
       {/* Main Content */}
       <div className="flex-1 bg-[#fafafa] overflow-y-auto">
 
