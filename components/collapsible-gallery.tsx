@@ -25,7 +25,7 @@ export function CollapsibleGallery({ images }: CollapsibleGalleryProps) {
   const [activeIndex, setActiveIndex] = useState<number | null>(null)
 
   return (
-    <div className="flex gap-1 w-full">
+    <div className="flex flex-col md:flex-row gap-1 w-full h-full">
       {images.map((image, index) => {
         const isActive = activeIndex === index
         const hasActive = activeIndex !== null
@@ -72,19 +72,20 @@ export function CollapsibleGallery({ images }: CollapsibleGalleryProps) {
         return (
           <div
             key={index}
+            onClick={() => setActiveIndex(isActive ? null : index)}
             onMouseEnter={() => setActiveIndex(index)}
             onMouseLeave={() => setActiveIndex(null)}
             className={`
-              transition-all duration-500 ease-in-out
-              ${isActive ? 'w-1/2' : hasActive ? 'w-1/6' : 'w-1/4'}
+              transition-all duration-500 ease-in-out cursor-pointer
+              ${isActive ? 'h-full md:h-auto md:w-1/2' : hasActive ? 'h-1/6 md:h-auto md:w-1/6' : 'h-1/4 md:h-auto md:w-1/4'}
             `}
           >
             {image.link ? (
-              <Link href={image.link} className="block cursor-pointer" aria-label={`View ${image.alt} project`}>
+              <Link href={image.link} className="block" aria-label={`View ${image.alt} project`}>
                 {content}
               </Link>
             ) : (
-              <div className="cursor-pointer">
+              <div>
                 {content}
               </div>
             )}
