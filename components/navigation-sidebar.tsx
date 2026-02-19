@@ -115,7 +115,7 @@ export function NavigationSidebar() {
 
         <div className="mt-2 flex flex-row gap-2">
           <a
-            href="https://drive.google.com/file/d/1gLxHGeQLmNp7gsrbu3GMdWekpYgEYh5G/view?usp=sharing"
+            href="https://drive.google.com/file/d/11GP1chV1n9Q8DssKWrSvD3_Ej_q1IgTU/view?usp=sharing"
             target="_blank"
             rel="noopener noreferrer"
             aria-label="Link to resume">
