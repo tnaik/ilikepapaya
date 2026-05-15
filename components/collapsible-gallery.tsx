@@ -43,10 +43,11 @@ export function CollapsibleGallery({ images }: CollapsibleGalleryProps) {
 
         return (
           <div
-            key={index}
+            key={image.src}
             onClick={() => handleClick(index, image.link)}
             onMouseEnter={() => setActiveIndex(index)}
             onMouseLeave={() => setActiveIndex(null)}
+            onTouchEnd={(e) => { e.preventDefault(); setActiveIndex(activeIndex === index ? null : index) }}
             className={`
               transition-all duration-500 ease-in-out cursor-pointer overflow-hidden
               min-w-0
@@ -64,6 +65,7 @@ export function CollapsibleGallery({ images }: CollapsibleGalleryProps) {
                     loop
                     playsInline
                     preload="auto"
+                    onClick={(e) => e.stopPropagation()}
                   />
                 ) : (
                   <Image
@@ -78,11 +80,11 @@ export function CollapsibleGallery({ images }: CollapsibleGalleryProps) {
                 )}
               </div>
               {/* Caption below each media item */}
-              <div className="mt-2 shrink-0 min-h-[12px]">
-                <div className={`flex items-center gap-2 text-sm text-[#7f7f7f] transition-opacity duration-300 ${isActive ? 'opacity-100' : 'opacity-0'}`}>
-                  <p className="flex-1">{image.alt}</p>
+              <div className="mt-2 shrink-0 h-5">
+                <div className={`flex items-center gap-2 text-sm text-[#7f7f7f] transition-opacity duration-300 ${isActive ? 'opacity-100' : 'opacity-100 md:opacity-0'}`}>
+                  <p className="flex-1 truncate">{image.alt}</p>
                   {image.link && (
-                    <ArrowRight size={16} className="hover:text-[#464646] transition-colors" />
+                    <ArrowRight size={16} className="shrink-0 hover:text-[#464646] transition-colors" />
                   )}
                 </div>
               </div>

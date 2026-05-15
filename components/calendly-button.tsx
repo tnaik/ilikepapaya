@@ -17,7 +17,7 @@ export function CalendlyButton() {
     <>
       <Button
         variant="outline"
-        className="bg-[#FAFAFA] text-black ring-1 ring-[#d9d9d9] hover:bg-[#f0f0f0] hover:text-[black] gap-2"
+        className="rounded-none bg-white text-black ring-1 ring-black hover:bg-black hover:text-white gap-2"
         onClick={() => setIsOpen(true)}
       >
         <div className="relative flex items-center justify-center w-3 h-3">
@@ -26,8 +26,8 @@ export function CalendlyButton() {
           {/* Inner dot */}
           <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500 pulse-dot"></span>
         </div>
-        <h3 className="text-xl">Open to New Projects</h3>
-        <Calendar size={18} strokeWidth={2.5}/>
+        <span className="text-sm font-medium">Let's Chat</span>
+        <Calendar size={18} strokeWidth={2}/>
       </Button>
 
       {rootElement && (
