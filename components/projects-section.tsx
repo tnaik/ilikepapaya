@@ -196,7 +196,7 @@ function ProjectRow({ project }: { project: (typeof PROJECTS)[0] }) {
   return (
     <div
       id={project.id}
-      className={`border-b border-[#f0f0f0] last:border-b-0 transition-colors duration-200 ${project.caseStudy ? "md:cursor-none" : ""}`}
+      className={`border-b border-[#f0f0f0] last:border-b-0 transition-colors duration-200 ${project.caseStudy ? "lg:cursor-none" : ""}`}
       onMouseEnter={() => setHovered(true)}
       onMouseLeave={() => setHovered(false)}
       onMouseMove={handleMouseMove}
@@ -204,7 +204,7 @@ function ProjectRow({ project }: { project: (typeof PROJECTS)[0] }) {
       <div onClick={() => project.caseStudy && router.push(project.caseStudy)}>
 
         {/* Mobile layout — always shows description, no hover needed */}
-        <div className="md:hidden px-4 py-4">
+        <div className="lg:hidden px-4 py-4">
           <div className="flex items-start justify-between gap-2 mb-2">
             <div className="flex items-baseline gap-2 min-w-0 flex-wrap">
               <span className="text-2xl font-medium text-[#d9d9d9] tabular-nums shrink-0">{project.num}</span>
@@ -243,7 +243,7 @@ function ProjectRow({ project }: { project: (typeof PROJECTS)[0] }) {
         </div>
 
         {/* Desktop layout — hover to expand */}
-        <div className="hidden md:block">
+        <div className="hidden lg:block">
           <div className={`grid grid-cols-[40px_1fr_auto] items-center gap-4 py-3 px-5 transition-colors duration-200 ${hovered ? "bg-[#fafafa]" : "bg-white"}`}>
             <span className="text-3xl font-medium text-[#d9d9d9] select-none tabular-nums">
               {project.num}
@@ -306,7 +306,7 @@ function ProjectRow({ project }: { project: (typeof PROJECTS)[0] }) {
       {/* Cursor label — desktop only */}
       {hovered && project.caseStudy && (
         <div
-          className="hidden md:flex fixed pointer-events-none z-50 bg-black text-white text-xs font-medium px-3 py-1.5 whitespace-nowrap items-center gap-1.5 translate-x-3 -translate-y-1/2"
+          className="hidden lg:flex fixed pointer-events-none z-50 bg-black text-white text-xs font-medium px-3 py-1.5 whitespace-nowrap items-center gap-1.5 translate-x-3 -translate-y-1/2"
           style={{ left: cursor.x, top: cursor.y }}
         >
           <BookOpen size={12} strokeWidth={2.5} />

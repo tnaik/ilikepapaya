@@ -13,10 +13,10 @@ export function NavigationSidebar() {
 
   return (
     <>
-      <div className="w-full md:w-80 bg-[#FAFAFA] border-b md:border-r border-[#d9d9d9] md:sticky md:top-0 md:h-screen">
+      <div className="w-full md:w-52 lg:w-72 bg-[#FAFAFA] border-b md:border-r border-[#d9d9d9] md:sticky md:top-0 md:h-screen md:flex-shrink-0">
         <button
           onClick={toggleNav}
-          className="w-full px-4 py-3 md:p-8 flex items-start justify-between md:pointer-events-none md:cursor-default"
+          className="w-full px-4 py-3 md:px-5 md:py-5 lg:p-8 flex items-start justify-between md:pointer-events-none md:cursor-default"
           aria-label="Toggle navigation menu"
           aria-expanded={isNavOpen}
         >
@@ -34,7 +34,7 @@ export function NavigationSidebar() {
           overflow-hidden transition-all duration-300 ease-in-out md:max-h-none md:opacity-100
           ${isNavOpen ? 'max-h-[800px] opacity-100' : 'max-h-0 opacity-0 md:opacity-100'}
         `}>
-          <div className="px-8 pb-8">
+          <div className="px-5 pb-5 lg:px-8 lg:pb-8">
             <nav className="space-y-4">
               <Link href="/#about" className="block text-[#464646] hover:text-black" aria-label="Link to About section" onClick={closeNav}>
                 About

@@ -3,12 +3,10 @@ import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft } from "lucide-react"
-import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export default function ACMCaseStudy() {
   return (
     <div className="w-full bg-white overflow-y-auto px-4 py-4 md:p-8">
-      <GoogleAnalytics />
       <div className="max-w-4xl mx-auto">
         {/* Back button */}
         <Link href="/#acm">

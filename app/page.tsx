@@ -12,7 +12,7 @@ export default function Home() {
         <HeroSection />
 
         {/* Work Section */}
-        <section id="work" className="px-4 md:px-8 pb-8 bg-white">
+        <section id="work" className="px-4 md:px-6 lg:px-8 pb-8 bg-white">
           <h2 className="text-2xl font-medium mb-4 text-[#464646]">Featured work</h2>
           <CollapsibleGallery
             images={[

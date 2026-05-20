@@ -14,7 +14,7 @@ const PHOTOS = [
 
 // Desktop fan — spreads LEFT, stack sits on right
 const FAN = [
-  { r: -16, x: -300 },
+  { r: -16, x: -330 },
   { r:  -8, x: -220 },
   { r:   0, x: -120 },
   { r:   8, x:  -60 },
@@ -132,20 +132,20 @@ function MobilePolaroidFan() {
 
 export function HeroSection() {
   return (
-    <section id="about" className="p-4 md:p-8 bg-white overflow-visible">
+    <section id="about" className="p-4 md:p-6 lg:p-8 bg-white overflow-visible">
 
-      {/* Mobile layout */}
-      <div className="md:hidden flex flex-col gap-4">
+      {/* Mobile + Tablet layout */}
+      <div className="lg:hidden flex flex-col gap-4">
         <h1
           className="leading-[0.9] text-[#464646]"
-          style={{ fontFamily: "var(--font-bebas-neue)", fontSize: "clamp(48px, 14vw, 72px)" }}
+          style={{ fontFamily: "var(--font-bebas-neue)", fontSize: "clamp(48px, 10vw, 72px)" }}
         >
           Tanisha Naik
         </h1>
-        <p className="text-sm text-[#7f7f7f] leading-relaxed">
+        <p className="text-sm text-[#7f7f7f] leading-relaxed max-w-sm">
           Product designer & creative technologist, currently designing AI systems for enterprise at AiFA Labs.
         </p>
-        <p className="text-sm text-[#7f7f7f] leading-relaxed">
+        <p className="text-sm text-[#7f7f7f] leading-relaxed max-w-sm">
           Interested in working in Media, Fashion, & Art.
         </p>
         <div className="w-fit">
@@ -154,8 +154,8 @@ export function HeroSection() {
         <MobilePolaroidFan />
       </div>
 
-      {/* Desktop layout */}
-      <div className="hidden md:flex items-start mr-8 gap-16">
+      {/* Desktop layout — lg and above only */}
+      <div className="hidden lg:flex items-start mr-8 gap-16">
         <div className="flex flex-col gap-4">
           <h1
             className="leading-[0.9] text-[#464646]"

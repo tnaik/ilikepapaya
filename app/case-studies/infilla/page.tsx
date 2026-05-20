@@ -6,7 +6,6 @@ import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
 import { ArrowLeft, Eye, Users, ShieldCheck, Quote, Lightbulb, Wrench, Search, PanelLeft, Sparkles, Layers, Highlighter, MapPin, BookOpen, MessageSquare, Layout, HelpCircle } from "lucide-react"
-import GoogleAnalytics from '@/components/GoogleAnalytics'
 
 export default function InfillaCaseStudy() {
   useEffect(() => {
@@ -34,7 +33,6 @@ export default function InfillaCaseStudy() {
 
   return (
     <div className="w-full bg-white overflow-y-auto px-4 py-4 md:p-8">
-      <GoogleAnalytics />
       <div className="max-w-4xl mx-auto">
         {/* Back button */}
         <Link href="/#infilla">
