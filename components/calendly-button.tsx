@@ -27,7 +27,6 @@ export function CalendlyButton() {
           <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500 pulse-dot"></span>
         </div>
         <span className="text-sm font-medium">Let's Chat</span>
-        <Calendar size={18} strokeWidth={2}/>
       </Button>
 
       {rootElement && (

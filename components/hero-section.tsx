@@ -14,20 +14,20 @@ const PHOTOS = [
 
 // Desktop fan — spreads LEFT, stack sits on right
 const FAN = [
-  { r: -16, x: -330 },
-  { r:  -8, x: -220 },
-  { r:   0, x: -120 },
-  { r:   8, x:  -60 },
-  { r:  16, x:   40 },
+  { r: -16, x: -400 },
+  { r:  -8, x: -295 },
+  { r:   0, x: -195 },
+  { r:   8, x:  -90 },
+  { r:  16, x:   10 },
 ]
 
 // Mobile fan — centered, compact to stay on screen
 const MOBILE_FAN = [
-  { r: -15, x: -104 },
-  { r:  -7, x:  -52 },
+  { r: -15, x: -128 },
+  { r:  -7, x:  -64 },
   { r:   2, x:    0 },
-  { r:   9, x:   52 },
-  { r:  17, x:  104 },
+  { r:   9, x:   64 },
+  { r:  15, x:  128 },
 ]
 
 const CARD_W        = 140
@@ -87,7 +87,6 @@ function PolaroidStack() {
 function MobilePolaroidFan() {
   const [activeCard, setActiveCard] = useState<number | null>(null)
 
-  // card height: photo (90 * 4/3 = 120px) + 6px top pad + 20px bottom pad = 146px
   return (
     <div className="flex flex-col items-center gap-2">
       <div className="relative w-full mt-4" style={{ height: 150 }}>

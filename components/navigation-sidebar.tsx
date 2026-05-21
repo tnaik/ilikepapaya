@@ -10,7 +10,7 @@ export function NavigationSidebar() {
   const close = () => setIsOpen(false)
 
   return (
-    <div className="fixed bottom-6 left-6 z-50 flex flex-col items-start gap-2">
+    <div className="fixed bottom-6 left-4 z-50 flex flex-col items-start gap-2 pointer-events-none">
 
       {/* Nav card — expands from button corner */}
       <div
@@ -116,7 +116,7 @@ export function NavigationSidebar() {
         onClick={() => setIsOpen(!isOpen)}
         aria-label="Toggle navigation menu"
         aria-expanded={isOpen}
-        className="flex items-center gap-2 bg-black text-white text-xs font-medium px-3 py-2 hover:bg-[#464646] transition-colors duration-200"
+        className="flex items-center gap-2 bg-black text-white text-xs font-medium px-3 py-2 hover:bg-[#464646] transition-colors duration-200 pointer-events-auto"
       >
         <span>{isOpen ? "Close" : "Menu"}</span>
       </button>

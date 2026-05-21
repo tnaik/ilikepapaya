@@ -19,38 +19,12 @@ const TAB_COLOR: Record<string, { bg: string; ring: string }> = {
   Skillsets:   { bg: "#5db3f1", ring: "#5db3f1" },
 }
 
-const EXPERIENCE = [
-  {
-    role: "Cognitive Product Designer",
-    company: "AiFA Labs",
-    date: "2023 – Present",
-    description: "Designing interfaces across a 17+ AI product suite — chatbots, dashboards, and document editors — while contributing to a shared component library and collaborating with PMs and engineers end-to-end.",
-  },
-  {
-    role: "Product Design Intern, Ideation Lead",
-    company: "Infilla",
-    date: "Oct 2025 – Feb 2026",
-    description: "Led ideation and design for a multi-source AI search interface for city planners, applying explainable AI principles to surface citation-backed results and reduce cognitive load in civic decision-making.",
-  },
-  {
-    role: "Webmaster",
-    company: "Titan Radio",
-    date: "2023 – 2025",
-    description: "Designed and maintained the web experience for 120+ DJs and 2,000+ monthly visitors, building custom WordPress themes and plugins with WCAG 2.1 AA accessibility compliance.",
-  },
-  {
-    role: "Digital Content Coordinator & Chief Website Editor",
-    company: "Titan Universe",
-    date: "2023 – 2024",
-    description: "Shaped digital content strategy and web presence for student-produced media, growing social engagement by 40%+ through data-informed publishing and consistent brand voice.",
-  },
-]
 
 export default function AboutPage() {
   const [activeTab, setActiveTab] = useState("Design")
 
   return (
-    <div className="w-full bg-white px-4 py-4 md:p-8">
+    <div className="w-full bg-white px-4 py-4 md:p-8 pb-24 md:pb-24">
       <div className="max-w-4xl mx-auto">
 
         {/* Back */}
@@ -133,7 +107,7 @@ export default function AboutPage() {
         <div className="border-t border-[#f0f0f0]" />
 
         {/* Skills */}
-        <section className="py-12">
+        <section className="pt-6 pb-2">
           <h2
             className="text-[#464646] mb-6"
             style={{ fontFamily: "var(--font-bebas-neue)", fontSize: "clamp(28px, 5vw, 42px)" }}
@@ -146,22 +120,23 @@ export default function AboutPage() {
               const isActive = activeTab === tab
               const { bg, ring } = TAB_COLOR[tab]
               return (
-                <div
+                <button
+                  type="button"
                   key={tab}
-                  onClick={() => !isActive && setActiveTab(tab)}
+                  onClick={() => setActiveTab(tab)}
+                  onTouchEnd={(e) => { e.preventDefault(); setActiveTab(tab) }}
                   className={`inline-flex items-center rounded-full px-2.5 py-1 text-xs font-medium transition-all duration-150 ${
                     isActive
                       ? "ring-2 ring-offset-2 text-[#252422]"
-                      : "hover:opacity-80 text-[#7f7f7f] cursor-pointer"
+                      : "hover:opacity-80 text-[#7f7f7f]"
                   }`}
                   style={{
                     backgroundColor: isActive ? bg : `${bg}90`,
-                    cursor: isActive ? "default" : "pointer",
                     ["--tw-ring-color" as string]: ring,
                   }}
                 >
                   {tab}
-                </div>
+                </button>
               )
             })}
           </div>
@@ -178,66 +153,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <div className="border-t border-[#f0f0f0]" />
-
-        {/* Experience */}
-        <section className="py-12">
-          <h2
-            className="text-[#464646] mb-8"
-            style={{ fontFamily: "var(--font-bebas-neue)", fontSize: "clamp(28px, 5vw, 42px)" }}
-          >
-            Experience
-          </h2>
-
-          <div>
-            {EXPERIENCE.map((job, i) => (
-              <div key={i} className="grid grid-cols-[40px_1fr] gap-2 py-8 border-b border-[#f0f0f0] last:border-b-0 last:pb-0 first:pt-0">
-                <span
-                  className="text-2xl font-medium text-[#d9d9d9] leading-none mt-0.5"
-                  style={{ fontFamily: "var(--font-bebas-neue)" }}
-                >
-                  {String(i + 1).padStart(2, "0")}
-                </span>
-                <div>
-                  <div className="flex items-start justify-between gap-4 mb-1">
-                    <h3 className="text-2xl font-medium text-[#464646]">{job.company}</h3>
-                    <span className="text-xs text-[#aaaaaa] whitespace-nowrap">{job.date}</span>
-                  </div>
-                  <p className="text-xs text-[#aaaaaa] mb-3">{job.role}</p>
-                  <p className="text-sm text-[#7f7f7f] leading-relaxed">{job.description}</p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </section>
-
-        <div className="border-t border-[#f0f0f0]" />
-
-        {/* Education */}
-        <section className="py-12">
-          <h2
-            className="text-[#464646] mb-6"
-            style={{ fontFamily: "var(--font-bebas-neue)", fontSize: "clamp(28px, 5vw, 42px)" }}
-          >
-            Education
-          </h2>
-          <div className="space-y-6">
-            <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-1 md:gap-12">
-              <div>
-                <h3 className="text-sm font-semibold text-[#464646]">Pratt Institute</h3>
-                <p className="text-xs text-[#aaaaaa]">M.S. Information Experience Design</p>
-              </div>
-              <p className="text-xs text-[#aaaaaa] md:text-right whitespace-nowrap">Present</p>
-            </div>
-            <div className="grid grid-cols-1 md:grid-cols-[1fr_auto] gap-1 md:gap-12">
-              <div>
-                <h3 className="text-sm font-semibold text-[#464646]">California State University, Fullerton</h3>
-                <p className="text-xs text-[#aaaaaa]">B.S. Computer Science</p>
-              </div>
-              <p className="text-xs text-[#aaaaaa] md:text-right whitespace-nowrap">May 2025</p>
-            </div>
-          </div>
-        </section>
 
       </div>
     </div>

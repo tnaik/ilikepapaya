@@ -337,7 +337,7 @@ export function ProjectsSection() {
         </div>
       </div>
 
-      <div className="mt-3 px-5 py-4 border border-dashed border-[#d9d9d9]">
+      <div className="mt-3 px-5 py-4 mb-4 border border-dashed border-[#d9d9d9]">
         <p className="text-sm font-medium text-[#464646]">Coming soon</p>
         <p className="text-xs text-[#7f7f7f] mt-0.5">Designing, tinkering, creating more projects...</p>
       </div>
