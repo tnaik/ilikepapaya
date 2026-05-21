@@ -71,6 +71,9 @@ export default function RootLayout({
       <body className={`${inter.variable} ${bebasNeue.variable} font-sans`}>
         <NavigationSidebar />
         {children}
+        <footer className="w-full px-4 md:px-8 py-4 text-center">
+          <p className="text-xs text-[#aaaaaa]">&copy; {new Date().getFullYear()} Tanisha Naik</p>
+        </footer>
       </body>
     </html>
   )

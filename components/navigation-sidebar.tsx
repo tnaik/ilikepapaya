@@ -73,7 +73,7 @@ export function NavigationSidebar() {
             <p className="text-sm text-white mb-2">Contact</p>
             <div className="flex flex-row gap-2">
               <a
-                href="https://drive.google.com/file/d/11GP1chV1n9Q8DssKWrSvD3_Ej_q1IgTU/view?usp=sharing"
+                href="/NaikTanishaResume_.pdf"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Resume"

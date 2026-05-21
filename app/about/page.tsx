@@ -72,7 +72,7 @@ export default function AboutPage() {
           </p>
 
           <div className="flex flex-row gap-2 flex-wrap">
-            <a href="https://drive.google.com/file/d/11GP1chV1n9Q8DssKWrSvD3_Ej_q1IgTU/view?usp=sharing" target="_blank" rel="noopener noreferrer">
+            <a href="/NaikTanishaResume_.pdf" target="_blank" rel="noopener noreferrer">
               <Badge className="gap-1 px-3 py-1.5 font-medium bg-[#42C97E] text-[#252422] hover:bg-[#42C97E]/80 rounded-full">
                 Resume
                 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" className="size-3.5 rotate-45">
