@@ -106,13 +106,71 @@ export default function AboutPage() {
 
         <div className="border-t border-[#f0f0f0]" />
 
+        {/* Experience */}
+        <section className="pt-6 pb-8">
+          <div className="flex flex-col gap-4">
+            <h2
+              className="text-[#464646]"
+              style={{ fontFamily: "var(--font-bebas-neue)", fontSize: "clamp(28px, 5vw, 42px)" }}
+            >
+              EXPERIENCE
+            </h2>
+            <ul className="flex flex-col gap-5">
+              {[
+                {
+                  company: "AiFA Labs",
+                  href: "https://aifalabs.com",
+                  role: "Cognitive Product Designer",
+                  date: "2023–Present",
+                },
+                {
+                  company: "Infilla",
+                  href: "https://www.infilla.com",
+                  role: "Product Design Intern, Ideation Lead",
+                  date: "Oct 2025–Feb 2026",
+                },
+                {
+                  company: "Titan Radio",
+                  href: "https://titanradio.org",
+                  role: "Webmaster",
+                  date: "2023–2025",
+                },
+                {
+                  company: "Titan Universe",
+                  href: "https://titanuniverse.org",
+                  role: "Digital Content Coordinator & Chief Website Editor",
+                  date: "2023–2024",
+                },
+              ].map((exp) => (
+                <li key={exp.company} className="flex flex-col gap-0.5">
+                  <div className="flex flex-wrap items-baseline gap-x-1.5 gap-y-0.5">
+                    <a
+                      href={exp.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm font-medium text-[#464646] underline underline-offset-2 hover:text-[#7f7f7f] transition-colors"
+                    >
+                      {exp.company}
+                    </a>
+                    <span className="text-sm text-[#aaaaaa]">—</span>
+                    <span className="text-sm text-[#7f7f7f]">{exp.role}</span>
+                  </div>
+                  <span className="text-xs text-[#aaaaaa]">{exp.date}</span>
+                </li>
+              ))}
+            </ul>
+          </div>
+        </section>
+
+        <div className="border-t border-[#f0f0f0]" />
+
         {/* Skills */}
         <section className="pt-6 pb-2">
           <h2
             className="text-[#464646] mb-6"
             style={{ fontFamily: "var(--font-bebas-neue)", fontSize: "clamp(28px, 5vw, 42px)" }}
           >
-            Skills
+            WORKFLOW
           </h2>
 
           <div className="flex flex-wrap gap-2 mb-4">
