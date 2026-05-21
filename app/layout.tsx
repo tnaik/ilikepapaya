@@ -69,12 +69,8 @@ export default function RootLayout({
       <GoogleAnalytics />
       <Analytics />
       <body className={`${inter.variable} ${bebasNeue.variable} font-sans`}>
-        <div className="flex flex-col md:flex-row min-h-screen Bebas-Neue">
-          <NavigationSidebar />
-
-          {/* Main Content */}
-          {children}
-        </div>
+        <NavigationSidebar />
+        {children}
       </body>
     </html>
   )
