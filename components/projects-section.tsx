@@ -4,8 +4,8 @@ import Link from "next/link"
 import Image from "next/image"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
-import { BookOpen, ArrowUpRight } from "lucide-react"
-import { useState } from "react"
+import { BookOpen, ArrowUpRight, LayoutGrid, List } from "lucide-react"
+import { useState, useEffect } from "react"
 import { useRouter } from "next/navigation"
 
 const FEATURED = {
@@ -317,30 +317,161 @@ function ProjectRow({ project }: { project: (typeof PROJECTS)[0] }) {
   )
 }
 
+const GRID_PROJECTS = [
+  {
+    id: FEATURED.id,
+    num: FEATURED.num,
+    name: FEATURED.name,
+    href: FEATURED.href,
+    caseStudy: FEATURED.caseStudy,
+    thumbnail: FEATURED.media[0].src,
+    thumbnails: null as string[] | null,
+    tags: FEATURED.tags,
+  },
+  ...PROJECTS.map((p) => ({
+    id: p.id,
+    num: p.num,
+    name: p.name,
+    href: p.href,
+    caseStudy: p.caseStudy,
+    thumbnail: p.thumbnail,
+    thumbnails: p.id === "BlogIt"
+      ? ["/assets/BlogIt/BlogIt1.png", "/assets/BlogIt/BlogIt2.png", "/assets/BlogIt/BlogIt3.png"]
+      : null,
+    tags: p.tags,
+  })),
+]
+
+function FadingThumbnail({ srcs, alt }: { srcs: string[]; alt: string }) {
+  const [index, setIndex] = useState(0)
+
+  useEffect(() => {
+    const id = setInterval(() => {
+      setIndex((i) => (i + 1) % srcs.length)
+    }, 2800)
+    return () => clearInterval(id)
+  }, [srcs.length])
+
+  return (
+    <>
+      {srcs.map((src, i) => (
+        <div
+          key={src}
+          className="absolute inset-0"
+          style={{ opacity: i === index ? 1 : 0, transition: "opacity 1.4s ease-in-out" }}
+        >
+          <Image
+            src={src}
+            alt={alt}
+            fill
+            sizes="(max-width: 768px) 50vw, 33vw"
+            className="object-cover"
+            quality={75}
+          />
+        </div>
+      ))}
+    </>
+  )
+}
+
+function GridView() {
+  const router = useRouter()
+
+  return (
+    <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
+      {GRID_PROJECTS.map((project) => {
+        const isClickable = !!(project.caseStudy || project.href)
+        return (
+          <div
+            key={project.id}
+            className={`group overflow-hidden bg-[#fafafa] border border-[#f0f0f0] ${isClickable ? "cursor-pointer" : ""}`}
+            onClick={() => {
+              if (project.caseStudy) router.push(project.caseStudy)
+              else if (project.href) window.open(project.href, "_blank")
+            }}
+          >
+            <div className="relative w-full aspect-[4/3] overflow-hidden bg-[#f0f0f0]">
+              {project.thumbnails ? (
+                <FadingThumbnail srcs={project.thumbnails} alt={project.name} />
+              ) : (
+                <Image
+                  src={project.thumbnail}
+                  alt={project.name}
+                  fill
+                  sizes="(max-width: 768px) 50vw, 33vw"
+                  className="object-cover group-hover:scale-105 transition-transform duration-500"
+                  quality={75}
+                />
+              )}
+            </div>
+            <div className="px-3 py-2.5">
+              <div className="flex items-baseline gap-2">
+                <span className="text-sm text-[#d9d9d9] tabular-nums shrink-0">{project.num}</span>
+                <h3 className="text-base font-medium text-[#464646] leading-snug">{project.name}</h3>
+              </div>
+              <div className="flex flex-wrap gap-1 mt-1.5">
+                {project.tags.slice(0, 2).map((t) => (
+                  <Badge key={t.label} variant="outline" className={`border-0 ${t.color} ${t.hover} transition-colors`}>
+                    {t.label}
+                  </Badge>
+                ))}
+              </div>
+            </div>
+          </div>
+        )
+      })}
+    </div>
+  )
+}
+
 export function ProjectsSection() {
+  const [viewMode, setViewMode] = useState<"list" | "grid">("list")
+
   return (
     <section id="projects" className="bg-white px-4 md:px-8 pb-12">
-      <h2 className="text-2xl font-medium text-[#464646] pb-4">Projects</h2>
-
-      <FeaturedProject />
-
-      <div className="mt-2">
-        <div className="px-1 py-2">
-          <span className="text-xs font-medium text-[#7f7f7f] tracking-widest uppercase">
-            More projects
-          </span>
-        </div>
-        <div>
-          {PROJECTS.map((p) => (
-            <ProjectRow key={p.id} project={p} />
-          ))}
+      <div className="flex items-center justify-between pb-4">
+        <h2 className="text-2xl font-medium text-[#464646]">Projects</h2>
+        <div className="flex items-center gap-0.5">
+          <button
+            onClick={() => setViewMode("list")}
+            aria-label="List view"
+            className={`p-1.5 transition-colors ${viewMode === "list" ? "text-[#464646]" : "text-[#d9d9d9] hover:text-[#aaaaaa]"}`}
+          >
+            <List size={16} />
+          </button>
+          <button
+            onClick={() => setViewMode("grid")}
+            aria-label="Grid view"
+            className={`p-1.5 transition-colors ${viewMode === "grid" ? "text-[#464646]" : "text-[#d9d9d9] hover:text-[#aaaaaa]"}`}
+          >
+            <LayoutGrid size={16} />
+          </button>
         </div>
       </div>
 
-      <div className="mt-3 px-5 py-4 mb-4 border border-dashed border-[#d9d9d9]">
-        <p className="text-sm font-medium text-[#464646]">Coming soon</p>
-        <p className="text-xs text-[#7f7f7f] mt-0.5">Designing, tinkering, creating more projects...</p>
-      </div>
+      {viewMode === "list" ? (
+        <>
+          <FeaturedProject />
+          <div className="mt-2">
+            <div className="px-1 py-2">
+              <span className="text-xs font-medium text-[#7f7f7f] tracking-widest uppercase">
+                More projects
+              </span>
+            </div>
+            <div>
+              {PROJECTS.map((p) => (
+                <ProjectRow key={p.id} project={p} />
+              ))}
+            </div>
+          </div>
+          <div className="mt-3 px-5 py-4 mb-4 border border-dashed border-[#d9d9d9]">
+            <p className="text-sm font-medium text-[#464646]">Coming soon</p>
+            <p className="text-xs text-[#7f7f7f] mt-0.5">Designing, tinkering, creating more projects...</p>
+          </div>
+        </>
+      ) : (
+        <GridView />
+      )}
     </section>
   )
 }
