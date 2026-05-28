@@ -409,7 +409,7 @@ function GridView() {
                 <span className="text-sm text-[#d9d9d9] tabular-nums shrink-0">{project.num}</span>
                 <h3 className="text-base font-medium text-[#464646] leading-snug">{project.name}</h3>
               </div>
-              <div className="flex flex-wrap gap-1 mt-1.5">
+              <div className="hidden md:flex flex-wrap gap-1 mt-1.5">
                 {project.tags.slice(0, 2).map((t) => (
                   <Badge key={t.label} variant="outline" className={`border-0 ${t.color} ${t.hover} transition-colors`}>
                     {t.label}
