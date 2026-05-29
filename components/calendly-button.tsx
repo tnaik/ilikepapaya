@@ -1,42 +1,11 @@
-"use client"
-
-import { useEffect, useState } from "react"
-import { PopupModal } from "react-calendly"
-import { Button } from "@/components/ui/button"
-import { Calendar } from "lucide-react"
-
 export function CalendlyButton() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [rootElement, setRootElement] = useState<HTMLElement | null>(null)
-
-  useEffect(() => {
-    setRootElement(document.body)
-  }, [])
-
   return (
-    <>
-      <Button
-        variant="outline"
-        className="rounded-none bg-white text-black ring-1 ring-black hover:bg-black hover:text-white gap-2"
-        onClick={() => setIsOpen(true)}
-      >
-        <div className="relative flex items-center justify-center w-3 h-3">
-          {/* Pulsing ring */}
-          <span className="absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75 pulse-ring"></span>
-          {/* Inner dot */}
-          <span className="relative inline-flex rounded-full h-2 w-2 bg-green-500 pulse-dot"></span>
-        </div>
-        <span className="text-sm font-medium">Let's Chat</span>
-      </Button>
-
-      {rootElement && (
-        <PopupModal
-          url="https://calendly.com/tanishapnaik"
-          onModalClose={() => setIsOpen(false)}
-          open={isOpen}
-          rootElement={rootElement}
-        />
-      )}
-    </>
+    <div className="flex items-center gap-2">
+      <div className="relative flex items-center justify-center w-2 h-2">
+        <span className="absolute inline-flex h-full w-full rounded-full bg-green-500 opacity-75 pulse-ring"></span>
+        <span className="relative inline-flex rounded-full h-1.5 w-1.5 bg-green-500 pulse-dot"></span>
+      </div>
+      <span className="text-xs font-medium text-[#464646] tracking-widest uppercase">Available for work</span>
+    </div>
   )
 }
